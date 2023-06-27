@@ -1,0 +1,188 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- platform_info
+- name_info
+- event_narration
+- platformBlockInfo
+- greet
+- help_info
+- goodbye
+- duration_info
+- organization_info
+- organization_help
+- contact
+- payment_info
+- legal_advice
+- about_organization
+- help_mode
+- location
+- affirm
+- nlu_fallback
+- privacy_concern
+- time_duration
+- user_event_deny
+- timing_info
+- others
+- othersPrivacy
+entities:
+- accused
+- age
+- duration
+- event
+- gender
+- location
+- mode
+- name
+- org
+- platform
+- platformBlock
+slots:
+  event:
+    type: text
+    influence_conversation: true
+  name:
+    type: text
+    influence_conversation: true
+  platform:
+    type: text
+    influence_conversation: true
+  location:
+    type: text
+    influence_conversation: true
+  duration:
+    type: text
+    influence_conversation: true
+  mode:
+    type: text
+    influence_conversation: true
+  org:
+    type: text
+    influence_conversation: true
+  accused:
+    type: text
+    influence_conversation: true
+  platformBlock:
+    type: text
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: नमस्ते, यह आपको सुरक्षित वातावरण में मदद करने के लिए काउंसलिंग बॉट है। क्या मेरे द्वारा आपकी कोई सहायता हो सकती है ?
+  utter_help_info:
+  - text: हाँ बिल्कुल, हम आपकी मदद के लिए यहाँ हैं। क्या आप कृपया मुझे बता सकते हैं कि मैं किसके साथ बातचीत कर रहा हूं?
+  - text: हम आपकी सहायता के लिए यहाँ हैं। क्या आप कृपया मुझे अपना नाम बताएँगे?
+  - text: ज़रूर, मैं आपकी मदद करने के लिए यहाँ हूँ। कृपया गहरी सांस लें. कृपया मुझे अपना नाम बताएं।
+  utter_goodbye:
+  - text: ज़रूर, अगर आपको मदद की ज़रूरत हो तो कृपया बेझिझक हमसे दोबारा संपर्क करें। हमसे संपर्क करने के लिए धन्यवाद।
+  utter_time_duration:
+  - text: यह आपके मामले पर निर्भर करता है. पुलिस अधिकारी मामले की जांच करेंगे और तदनुसार कार्रवाई करेंगे।
+  - text: यह आपके मामले पर निर्भर करता है.
+  utter_event_duration:
+  - text: आप कब से इस समस्या का सामना कर रहे हैं?
+  - text: आपको यह समस्या कब शुरू हुई?
+  - text: आप कितने दिनों से इस समस्या का सामना कर रहे हैं?
+  utter_ncw_help:
+  - text: आप शिकायत कैसे दर्ज करना चाहेंगे? - ऑनलाइन/ऑफ़लाइन?
+  utter_privacy_concern:
+  - text: क्षमा करें, हमारा इरादा आपको नाराज़ करने का नहीं था। हम आपका विवरण जाने बिना आपकी सेवा करने में प्रसन्न हैं। क्या आप बेहतर तरीके से सहायता करने के लिए कृपया अपनी समस्या विस्तार से साझा करेंगे?
+  - text: हां, निश्चित रूप से हम आपकी सहायता के लिए यहां हैं। कृपया अपनी समस्या बताएं?
+  utter_user_event_deny:
+  - text: ठीक है, क्या आप शिकायत दर्ज करना चाहते हैं?
+  - text: क्या आप कोई कानूनी या परामर्श सलाह चाहते हैं?
+  - text: क्या आप कानूनी परामर्श सलाह प्राप्त करने में रुचि लेंगे?
+  utter_legal_advice:
+  - text: आप पीछा करने की समस्या का सामना कर रहे हैं जो आपराधिक कानून (संशोधन) अधिनियम, 2013 और सूचना प्रौद्योगिकी (संशोधन) अधिनियम 2008 की धारा 67 के माध्यम से आईपीसी की धारा 354 डी के तहत एक आपराधिक अपराध है।
+  - text: आपराधिक कानून (संशोधन) अधिनियम, 2013 और सूचना प्रौद्योगिकी (संशोधन) अधिनियम 2008 की धारा 67 के माध्यम से आईपीसी की धारा 354डी के तहत पीछा करना एक आपराधिक अपराध है।
+  utter_ask_event_form_event:
+  - text: क्या आप कृपया अपनी समस्या विस्तार से बताएंगे?
+  utter_ask_event_form_name:
+  - text: क्या आप अपना नाम साझा करने में सहज हैं?
+  utter_ask_event_form_platform:
+  - text: |
+      क्या आप कृपया मुझे बताएंगे कि वह आपको संदेश भेजने के लिए किस प्लेटफ़ॉर्म का उपयोग कर रहा है?
+  - text: |
+      कृपया मुझे बताएं कि वह आपसे संपर्क करने के लिए किस प्लेटफ़ॉर्म का उपयोग कर रहा है?
+  utter_ask_event_form_duration:
+  - text: |
+      आप कब से इस समस्या का सामना कर रहे हैं?
+  utter_ask_location:
+  - text: |
+      क्या आप कृपया मुझे अपना राज्य स्थान बताएंगे?
+  - text: |
+      कृपया मुझे अपना राज्य बताएं।
+  utter_payment:
+  - text: मुझे आपको यह बताते हुए बहुत खुशी हो रही है कि यह निःशुल्क सेवा है। आपको भुगतान करने की आवश्यकता नहीं है.
+  utter_ask_event_form_platformBlock:
+  - text: |
+      क्या आपने उस खाते को ब्लॉक/रिपोर्ट किया है?
+  - text: |
+      क्या आप कृपया मुझे बताएंगे कि आपने उस खाते को ब्लॉक किया है या नहीं?
+actions:
+- action_about_organization
+- action_contact
+- action_duration_info
+- action_event_form
+- action_help_mode
+- action_location
+- action_name_info
+- action_organization
+- action_platform_info
+- action_timing_info
+- utter_ask_event_form_duration
+- utter_ask_event_form_platform
+- utter_ask_event_form_platformBlock
+- utter_event_duration
+- utter_goodbye
+- utter_greet
+- utter_help_info
+- utter_legal_advice
+- utter_name_info
+- utter_ncw_help
+- utter_online_ncw
+- utter_organization_info
+- utter_payment
+- validate_event_form
+forms:
+  event_form:
+    required_slots:
+      event:
+      - type: from_entity
+        entity: event
+      - type: from_intent
+        value: None
+        intent: event_narration
+        conditions:
+        - active_loop: event_form
+          requested_slot: event
+      duration:
+      - type: from_entity
+        entity: duration
+      - type: from_intent
+        value: None
+        intent: duration_info
+        conditions:
+        - active_loop: event_form
+          requested_slot: duration
+      platform:
+      - type: from_entity
+        entity: platform
+      - type: from_intent
+        value: None
+        intent: platform_info
+        conditions:
+        - active_loop: event_form
+          requested_slot: platform
+      platformBlock:
+      - type: from_entity
+        entity: platformBlock
+      - type: from_intent
+        value: None
+        intent: platformBlockInfo
+      - type: from_intent
+        value: No
+        intent: user_event_deny
+        conditions:
+        - active_loop: event_form
+          requested_slot: platformBlock
