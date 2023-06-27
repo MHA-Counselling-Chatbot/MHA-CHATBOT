@@ -1,0 +1,431 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hello Rakshak, I am looking for help for my daughter.
+    - Hi Rakshak, mai apni daughter ke liye help khoj rhi.
+    - Hello Rakshak, mai help khoj rhi ho.
+    - Hello Rakshak , kya mujhe yha help mil skti hai?
+    - Rakshak, kya mujhe help mil skti hai?
+    - Rakshak , kya yha koi help hai mere liye?
+    - Hi Rakshak!
+    - Hello Rakshak!
+    - hi Rakshak!
+    - hello Rakshak!
+    - Mai badi problem me ho. Mujhe urgent help chahiye.
+    - I want to die. Kripya help kijiye.
+    - Hello, Mujhe us kamine ke kaaran khud ko maarne k man kr rha hai. Can I get any help here?
+    - Hello Rakshak.
+    - Hello
+    - Hi
+    - hello
+    - hiii
+    - hii
+    - Hii mujhe help chahiye
+    - hi
+    - Hi meri help kro.
+    - Hii
+    - Hi Rakshak.
+    - Hello Rakshak
+- intent: help_info
+  examples: |
+    - Please meri help kre Rakshak. Mai Khatre me ho.
+    - Please meri help kre Rakshak.
+    - Mujhe kisi ki help chahiye
+    - Mujhe kisi ki help chahiye.
+    - Please meri help kijiye.
+    - Meri image daav pr hai. Please help me Rakshak.
+    - Please meri help kijiye. Main bhut truoble me ho.
+    - Hell with your greetings. Please mujhe bacha lijiye.
+    - Kya aap meri help kar sakte hain, Rakshak?
+    - Meri help kro
+    - meri help kijiye.
+    - Meri help kijiye.
+    - meri help kro.
+    - Mujhe aapki help chahiye.
+    - Mujhe aapki help chahiye Rakshak.
+    - Main bdi problme me hun.Please meri help kre.
+- intent: goodbye
+  examples: |
+    - Rakshak, aapki service Rakshak dekhkr bhut accha lga. see you again, Bye.
+    - sabhi information ke liye thanks. jldi milte hai. Bye.
+    - Thanks, Rakshak. Tumne mera din safal kr diya. Bye.
+    - Ok, aapki valuable help ke liye thanks Rakshak, now bye.
+    - okay. Thanks
+    - thanks
+    - thanks for legal information.
+    - thank you
+    - thanks Rakshak.
+    - thank you aapki help ke liye.
+    - thank you for your help
+    - No. Thanks
+    - thank you. main aapse baad me discuss krungi es issue ko.
+    - okay thanks.
+    - thank you for all the information.
+    - thanks for all the information.
+    - Thanks for all the information.
+- intent: privacy_concern
+  examples: |
+    - mai privacy kaarno se es trah hr jagh apna details share nhi kr skti. Kya aap please mera detail jaane bina meri help kr skte hai?
+    - I can not share my details because of some privacy reasons . Kya app meri help kr skte hai without knowing my details?
+    - I dont want to share my details because of some privacy reasons. Kya aap meri help kar skate hai without knowing my details?
+    - I dont want to share my details because of some privacy reasons. Kya aap meri help karenge without knowing my details?
+    - I can not share my details because of some privacy reasons . Kya app meri help kr sktenge without knowing my details?
+    - Mai privacy kaarno se apna name nhi bta rhi ho. kya aap ise jaane bina meri help kr skte hai?
+    - Mai apni identity reveal nhi krna chahti.
+    - Mai apna name share nhi krna chahti.
+    - I dont want to reveal my name. Kya aap meri help kar sakte hai without knowing my name?
+    - I dont want to reveal my identity. Kya aap meri help kar sakte hai without knowing my name?
+    - kay aap meri help kar sakte hai without knowing my name ?
+    - please meri help kijiye without knowing my name.
+    - is it mandatory to share the name?
+    - mai apna name share nhi krna chahti hoon. will that be okay?
+    - Mai apna name share nhi krna chahti hoon. Will that be okay?
+    - Mai apna name share nhi krna chahti.
+
+- intent: name_info
+  examples: |
+    - Mai [Anamika](name) Ho. Mai ek college ki student ho.
+    - Mai [Niharika](name) ho. Mai [22](age) saal ki ho.
+    - Mera naam [Sagarika](name) hai.
+    - Mera naam [Radha](name) hai.
+    - Mera naam [Suman](name) hai.
+    - Mera naam [Keerthi](name)hai.
+    - Mai [Armita](name) Ho. Mai ek college ki student ho.
+    - Mai [Avanti](name) Ho. Mai ek college ki student ho.
+    - Mera naam [Komal](name) hai.
+    - Mera naam [Priya](name) hai.
+    - mai [Anamika](name) ho.
+    - mera naam [Anamika](name) hai.
+    - hmm..Mera name [Keerthi](name) hai.
+    - mera name [Armita](name) hai.
+    - hmm..mera name [Sarojini](name) hai.
+    - Mera name [Aakriti](name) hai.
+    - Mera name [Nikita](name) hai.
+    - Mera name [Anushka](name) hai.
+    - main [Stuti](name) hooN, a Dhanbad-based [18](age) year old girl from Sindri.
+    - Mera name [Supriya](name) hain.
+- intent: event_narration
+  examples: |
+    - Mera ex mujhe preshaan kar rha hai.
+    - Mai ek model ho. Meri team ka photographer mujhe [blackmail](event) kar rha hai.
+    - mai ek model ho. meri team ka photographer mujhe [blackmail](event) kar rha hai.
+    - mera ex mujhko preshaan kr rha hai.
+    - Mera ek mujhe preshaan kr raha hai
+    - Uske paas mere private photos hai. wo mujhe [blackmail](event) kar raha hai and bol rha hai ki wo uno viral kar deha agr maine uske saath patch up nhi kiya.
+    - main ek restaurant men ek waiter hun aur ek [rascal customer](accused) hr din mere paas aataa hai aur fantabulous service ke lie khtaa hai . begenning me, main smjh nhin paayaa aur mainne ek waiter hone ke naate reply diyaa ki use yhaan ek  fantabulous service milega. tb se vh rascal personally aur mere social media pr mera [pichaa](event) kr rhaa hai
+    - vah rascal chahta hai ki main uske family me show karne ke liye jaun ki main uski wife hun. aur vah mujhe one month ke liye ghar me rakhna chahta hai. maine refuse kar diya to vah mujhe defame karne ki kosis kar raha hai aur mujhe uske proposal par agree hone ke liye [force](event) kar raha hai.
+    - Hi Rakshak, koi mujhe bahut badly [chase](event) kar raha hai.
+    - main daily morning walk par jata hun jahan ek [ladka](accused) mujhe [follow](event) karta tha. ab mujhe lagta hai ki vah mujhe WhatsApp karta hai. mujhe ab dar lag raha hai.
+    - Main ek divorcy hoon aur akele job karti hoon aur apni do betiyon ki akele take care karti hoon. aur office me mere rascal [boss](accused) ki nazar buri tarah se mujh par hai aur mujhse [sexual favor maang raha hai]{"entity": "event", "value": "harassment"}. vah mere social media account par mera [picha](event) kar raha hai aur mujhe vulgar videos or pics bhej raha hai.
+    - uske paas meri kuch photos hain jo usne mere mobile se meri knowledge ke bina forcefully li hain.  aur ab vah mere social media account par mujhe [follow](event) kar raha hai aur ab vah meri pics par vulgar comment kar raha hai.
+    - Recently I got befriended by a boy on [instagram ](platform) and main bahut khush thi. But now wh mujhe [blackmail](event) kar raha hai.
+    - Mera koi [picha](event) kr rha.
+    - ek club me ek ldke se mili aur Maine us time usse kaafi baate ki uske baad maine notice kiya ki [wo mera peecha kr rha hai]{"entity": "event", "value": "stalking"}. Wo mere office ke bhr bhi bhut der tk baith rhta hai. Mujhe drr lg rha hai ab.
+    - Ek rascal meri morphed pics ko online spread kar raha hai aur mujhe money and sex ke liye [blackmail](event) kar raha hai.
+    - Ek rascal mere social media account par mujhe [follow kar raha hai]{"entity": "event", "value": "stalking"} aur mujhe ek baar date ke liye bula raha hai. Main ek teacher hoon aur meri reputation stake par hai.
+    - ek rascal mujhe follow kar raha hai aur mujhe feel hua ki mera social sites pr ek unknown account active hai.
+    - vah meri har [pics aur videos pr vulger comment karta hain]{"entity": "event", "value": "harassment"}. Maine use kayi bar block kiya hai lekin vah hmesa new account ke saath aa jaata hai.
+    - vah mere [social media par mujhe follow kar raha hai]{"entity": "event", "value": "stalking"}. Meri post pr vulger comment likh raha hai. aur mujhe adult movies bhi bhej raha hai.
+    - Main kolkata se Keral jaa rhi thi aur train me I met a boy. He was very nice to me. Thats why humne apne number aur social media accout ko exchange kiya lekin vah mujhe ab torture kr rha hai.
+    - yes wh meri photos mere [whatsapp](platform) account pr bhej rha hai. [He knows everything about me]{"entity": "event", "value": "stalking"} ki mai kha jaati ho, kya krti ho, sb kuch.
+    - yes wh meri photos mere [whatsapp](platform) account pr bhej rha hai. [Wh mere baare me sab kuch jaanta hai]{"entity": "event", "value": "stalking"} ki mai kha jaati ho, kya krti ho, sb kuch.
+    - Kal mujhe apne Insta account pr kuch message aaye and unhone kha ki wo mujhe jaante hai but mai nhi jaanti and wh kh rha tha ki wo mujhse past 3 months se kisi other website pr baat kr rhe hai
+    - Yes! usen mujhe btaya ki wh website pr [koi mere  name, photos aur Insta reel ka use kar ke mai hone ka natak kr rha hai]{"entity": "event", "value": "masquerading"}.
+    - Yes ! us person ne mujjhe link diya and I checked that us website pr meri photos and reels bhri hui hai. Please meri help kijiye.
+    - [someone using my photos and identity]{"entity": "event", "value": "masquerading"}.
+    - [Koi mere photos and name ka use kar raha hai]{"entity": "event", "value": "masquerading"}.
+    - ek rascal mere social media account par [mujhe follow kar raha hai]{"entity": "event", "value": "stalking"} aur mujhe ek baar date ke liye bula raha hai. Main ek teacher hoon aur meri reputation stake par hai.
+    - aur office me mere rascal [boss](accused) ki nazar buri tarah se mujh par hai aur mujhse [sexual favor maang raha]{"entity": "event", "value": "harassment"} hai.
+    - Please meri help kro. Mera koi [peecha](event) kar raha hai.
+    - ek rascal mujhe [follow kar raha hai]{"entity": "event", "value": "stalking"} aur mujhe fel hua hai ki mera social sites pr ek unknown account active hain.
+    - koi mujhe badly [follow]{"entity": "event", "value": "stalking"} kar raha hai.
+    - koi mera [peecha](event) kara raha hai.
+    - mujhe koi preshaan kar raha hai.
+    - [koi mera name and pics ka use kar rha](event) withour my permission.
+    - mai bhut problem me ho. Wo mujhe kill kr dega. please help.
+    - mera [ex- boyfriend](accused) mujhe physical and online [follow](event) kar raha hai. uski baat nhi maani to wo mujhe Kill kr dega. Mai bhut dari hui ho. please help.
+    - Mera [manger](accused) mera promotion rok raha hai. mai is company me 12 saal se kaam kar rhi lekin wo mujhe successful nhi hone dena chahta.
+    - wo mujhse [sexual favor maang](event) raha hai mere promotion ke liye. this is very disgusting. please help.
+    - Please meri help kijiye. Wo mujhe kill kr dega.
+    - uske pass meri kuch private pictures hai. wo mujhe [blackmail](event) kar raha hai agr maine uske saath sex nhi kiya to wo un pictures ko viral kr dega and mujhe maar dega.
+    - Mujhe koi online [stalk](event) kar raha hai.
+    - Mujhe mera [ex- boyfrien]{"entity": "accused", "value": "ex-boyfriend"}d [2 months]{"entity": "duration", "value": "month"} se preshaan kar raha hai.
+    - wo mujhe maar dega agr maine uski baat nhi maani.
+    - uske paas mere private photos hai. wo mujhe [blackmail](event) kar raha hai and bol rha hai ki wo uno viral kar deha agr maine uske saath patch up nhi kiya.
+    - Mere collegaue mujhe sabse pahle contact karte hain aur jab main refuse karti hoon aur reply karti hun then that creep ne mujhe abuse kiya and mujhe message bhejna start kar diya.
+    - Usne mujhe propose kiya aur jab maine uske proposal ko refuse kar diya then he started [abusing](event). I had hurted his ego, vah itna arrogant hai ki koi bhi girl use kabhi accept nahi kar sakti hai
+    - mujhe kuch log preshaan kar rhe hai.
+    - mtlb koi mere photos and videos ko bhut hi vulger tarike se edit karke mujhe [blackmail](event) kar raha hain ki wo usko viral kar dega and paise ka demand kar raha hai.
+    - mere college me kuch students ka group hai wo mujhe [stalk](event) kar rhe hain.
+    - koi mere saare videos pr [vulgar comment]{"entity": "event", "value": "harassment"} kar rah hai. Now I can not tolerate.
+    - mujhe koi [blackmail](event) kar raha hain.
+    - Mai ek model ho and apni photos social media pr share krti rhti ho. But iska koi glt use kr rha hai.
+    - koi mujhe [balckmail](event) kar raha hai. please help.
+    - Ek rascal meri morphed pics ko online spread kar raha hai and mujhe money and sex ke liye [blackmail](event) kar raha hai.
+    - Main ek aise person ki baat kar raha hun jo mere social media par regularly mujhe [follow](event) kar raha hai.
+    - Mai online [harassment](event) ko face kar rhi ho. Kuch log mere [instagram](platform) pr mujhe continoulsy vulgar message send kar rhe hain.
+    - Main ek yoga instructor hun. Main apni videos and photos social media pr bhi post karti hun. But kuch log iska galt use kar rhe hain.
+    - koi mere photos and videos ko bhut hi vulger tarike se edit karke mujhe [blackmail](event) kar raha hain ki wo usko viral kar dega and paise ka demand kar raha hain.
+- intent: platform_info
+  examples: |
+    - wah vulger text and message ke liye [whatsapp](platform) and [facebook](platform) ka use karta hai.
+    - wah [whatsapp](platform) pr mujhe photos and video send karta hai.
+    - [facebook](platform)
+    - [instagram](platform)
+    - Wh [whatsapp](platform) ka use kr rha hai
+    - hmm..wo [whatsapp](platform) k use kar raha hai.
+    - Wo facebook ka use kar raha hai.
+    - [facebbok](platform)
+    - [twitter](platform)
+    - wo mujhe [twitter](platform) pr preshaan kar raha hai,
+    - wo [facebook](platform) pr mujhe aisa kar rhe hain.
+    - [whatsapp](platform)
+    - vah vulgar text and videos messages ke liye [Facebook](platform) messenger ka use kar raha hai.
+    - hmm..wo mujhe aise message and edited videos mere [whatsapp](platform) pr bhejta hai.
+    - wh mujhe message krne ke liye [facebook](platform) ka use kr rha hai.
+- intent: platformBlockInfo
+  examples: |
+    - [Yes](platformBlock). But wo hmesa new number se mujhko text kar raha hai.
+    - [No](platformBlock). Maine usko block nhi kiya hai. Kya aap bata sakte hai ki kaise block kiya jaaye?
+    - [no](platformBlock), maine block nhi kiya hai.
+    - [no](platformBlock). maine block nhi kiya hain.
+    - [haa](platformBlock) , maine usko block kr diya hain.
+    - [nhi](platformBlock) kiya hai.
+    - [hmm](platformBlock) I blocked him.
+    - [Nahi](platformBlock) Kiya hai.
+    - [Yes](platformBlock), but aisa lagta hai ki us par uska koi effect nahi hai. vah abhi bhi kuch different ID ke sath continue hai.
+    - [yes](platformBlock) maine kiya but wo log nwe account ke saath phir se aa jaate hai. ab mai ye sb nhi sah sakti.
+    - [nhi](platformBlock) maine abhi us account ko block nhi kiya hain.
+    - mujhe [nhi](platformBlock) pta how to report account in whatsapp.
+- intent: organization_help
+  examples: |
+    - mujhe [cyber cell]{"entity": "org", "value": "cybercell"} ke through complaint file krna hai.
+    - [National cyber crime]{"entity": "org", "value": "cybercrime"} ka use karke report kaise karen?
+    - Main [National commission for women and child development]{"entity": "org", "value": "MWCD"} ko kaise contact kar sakti ho?
+    - Mai [cyber cell]{"entity": "org", "value": "cybercell"} ke complaint option ke liye jana chahunga.
+    - Main [NCW](org) ke complaint option ke baare me soch raha hun.
+    - Main [National Commission for Women]{"entity": "org", "value": "NCW"} ke complaint option ke baare me soch raha hun.
+    - Main [nationl commission for women]{"entity": "org", "value": "NCW"} ke complaint option ke baare me soch raha hun.
+    - kya main [ministry]{"entity": "org", "value": "MWCD"} me complaint kr sakta hoon?
+    - Main ab [NCW](org)ke maadhyam se us rascal ke against complaint karne ke liye search kar raha hoon.
+    - Main [NCW](org) complaint option ko lekr soch raha hun.
+    - Main yahan [MWCD](org) me complaint kaise kar sakta hoon?
+    - Mujhe [cyber cell]{"entity": "org", "value": "cybercell"} ke through complaint karana hai.
+    - mai [cyber crime](org) ke through complaint file krna chahti ho.
+    - mai [cybercrime](org) ke through complaint karna chahti ho.
+    - mai [NCW](org) ke through report karna chahati hoon.
+    - kya aap mujhe [cybercell](org) option ke baare me bata sakte hai?
+    - mai kaise complaint report kru ?
+    - main [ministry]{"entity": "org", "value": "MWCD"} ke through complaint file krna chahti hoon.
+    - Main [NCW](org) complaint option ke through complaint karne ke liye ready hun.
+    - mai [ministry]{"entity": "org", "value": "MWCD"} ke through complaint file karna chahti hoon.
+    - Mai [cyber cell]{"entity": "org", "value": "cybercell"} ke through complaint file krna chahti ho.
+- intent: help_mode
+  examples: |
+    - [Online]{"entity": "mode", "value": "online"} complain krne ke liye meri help kre.
+    - [offline](mode) complain krne ke liye help kijiye.
+    - Main NCW me [offline](mode) complaint kaise kar sakta hoon?
+    - Main NCW me [online](mode)complaint kaise kar skta hoon?
+    - Please NCW ke [offline](mode) option me meri help kare.
+    - [online](mode)
+    - [Online] (mode) complaint me meri help karen.
+- intent: duration_info
+  examples: |
+    - wah mujhe [3 months]{"entity": "duration", "value": "months"} se follow kr rha hai.
+    - [2 weeks]{"entity": "duration", "value": "week"}
+    - [2 days]{"entity": "duration", "value": "day"}
+    - mai es problem ko [bhut dino]{"entity": "duration", "value": "month"} se face kr rhi.
+    - mai es problem ko [2 months]{"entity": "duration", "value": "month"} se face kr rhi.
+    - [10 days]{"entity": "duration", "value": "day"} se mai es issue ko face kar rhi ho.
+    - main [ek month]{"entity": "duration", "value": "month"} se jyada time se isko face kar rahi hoon.
+    - main last [two months]{"entity": "duration", "value": "month"} se aisi problem ko suffer kar raha hoon.
+    - [three week]{"entity": "duration", "value": "week"} se
+    - mai yah sb [2 weeks]{"entity": "duration", "value": "week"} se face kat rhi hoon.
+    - mai es ko [2 weeks]{"entity": "duration", "value": "week"} se face kr rhi
+    - mai [2 months]{"entity": "duration", "value": "month"} se ye sab face kar rahi hoon.
+    - main ek [month](duration) se jyada time se isko face kar raha hoon.
+    - its more than a [week](duration) now. please kuch kre.
+    - hmm..mai almost [2 weeks]{"entity": "duration", "value": "week"} se es problem ko face kar rhi hun.
+    - 1 [week]{"entity":"duration", "value":"week"}
+    - 2 [week]{"entity":"duration", "value":"week"}
+    - 1 [month]{"entity": "duration", "value": "month"}
+    - 2 [months]{"entity": "duration", "value": "month"}
+    - Mai yah sb 2 [weeks]{"entity": "duration","value":"week"} se face kat rhi hoon.
+
+- intent: user_event_deny
+  examples: |
+    - No
+    - NO, maine sb kuch explain kr diya hai.
+    - Maine aapko sb kuch explain kr diya hai. Now please help me.
+    - [No](platformBlock) maine block nhi kiya hai.
+- intent: legal_advice
+  examples: |
+    - Please mujhe legal advice dijiye.
+    - No,  mujhe keval legal aid chahiye.
+    - mujhe online stalking ka saamna krna pd rha hai. Mai kya legal action le skti ho?
+    - kya hmare country mai online stalking pr koi law hai?
+    - Yes , mujhe legal action lena hai un logo pr
+- intent: organization_info
+  examples: |
+    - kya aap Please mujhe bta skte ki mai iski complaint kaise kr skta ho?
+    - Mai complaint file krne ke loye en law ka use kaise kr skti?
+    - yes mai complaint file krna chahti ho?
+    - yes mai complaint file krna chahti ho, Mai kaise report kr skti ho?
+    - Main un rascals ke against complaint krna ko ready hoon. Aapke paas kon se options hain?
+    - main in laws k use krek kaise complaint file kar sakti ho?
+    - yes, mujhe btaye ki kaise mai complaint report kar sakti ho.
+    - mai kaise complaint report kar sakti ho. please guide.
+    - please mujhe btaye ki mai kaise in laws k use kr ke usko jail me daal skti ho.
+    - mai en laws ka use kaise kar sakti ho?
+    - mujhe complaint file karna hai.
+    - Mai kaise complaint file kar skti ho?
+    - yes mai complaint file krna chahti ho, Mai kaise report kr skti ho?
+    - Mai kaise report kr skti ho.
+    - Yes mai complaint file krna chahti ho.
+    - Mai legal action lena chahti ho.
+    
+
+- intent: affirm
+  examples: |
+    - Yes, Mujeh legal advice chahiye.
+    - yes
+    - Ha
+    - yes mai complaint file krna chahti ho.
+    - yes mai complaint file krna chahti ho. Mai kaise report kr skti ho?
+    - yes.mai kaise es case ko report kr sakti ho?
+    - yes.
+    - yes . maine usko block kar diya.
+- intent: location
+  examples: |
+    - I am from Motihari, [kolkata]{"entity": "location", "value": "Patna"}
+    - I am from [ASSAM](location).
+    - Mai [Uttar Pradesh]{"entity": "location", "value": "UTTAR PRADESH"} se hoon.
+    - Mai [Punjab](location) se hoon.
+    - I am from [Punjab](location)
+    - I am from [kerla](location)
+    - Mai [Kerla](location) se hoon.
+- intent: contact
+  examples: |
+    - Kya koi helpline number hai jisse mai NCW ko contact kar sakti ho?
+    - Mai kaise inko contact kar sakti ho?
+    - Kya koi contact number hai jisse mai baat kr saku ?
+    - please koi contact number de dijiye jisse mai baat krke puch saku procedure ke baare me.
+    - Mai es organization ko kaise contact kar sakti ho?
+    - mai es organization ko kaise contact kar skti ho?
+    - is there any contact number jisse mai unko contact kar sku?
+- intent: payment_info
+  examples: |
+    - Kitna rupees lgenge es organization ke through complaint file krne me?
+    - I am coming from very normal family. Please mujhe btaye ki ye log complaint file krne ka kitna charge lete hai?
+    - Mujhe bataye ki registration fees kya hai es service ki?
+    - How much they charge?
+    - Mujhe kitne paise dene honge es service ke liye?
+    - please mujhe charge ke baare me btaye.
+    - How much they will charge complaint file krne ke liye?
+    - mujhe kitna charge pay karna hoga?
+    - Mujhe kya fees pay krna pdega complaint file krne ke liye?
+- intent: about_organization
+  examples: |
+    - Kya app please mujhse btayenge ki [NCW](org) kya hai?
+    - Kya app please mujhse btayenge ki [cyber cell](org)kya hai?
+    - Kya app please mujhse btayenge ki [National cyber crime reporting portal](org) kya hai?
+    - Kya app please mujhse btayenge ki [Ministry of Woemn and child developemnt](org) kya hai?
+    - I dont know about this organization . Please mujhe btaye.
+    - kya aap mujhe btayenge ki [NCW](org) kya hai?
+    - can you tell me about [cyber cell](org)?
+    - mujhe [cyber cell](org) ke baare me kuch nhi pta .
+    - can you tell me about [NCW](org)?
+    - mujhe [NCW](org) ke baare me kuch nhi pta .
+    - can you tell me about [cyber crime reporting portal](org)?
+    - mujhe [MWCD](org) ke baare me kuch nhi pta .
+    - Kya aap mujhe [cyber cell](org) ke baare me kuch bta skte hai?
+- intent: timing_info
+  examples: |
+    - Kya aap bata sakte hai ki [NCW](org) ko kb contact kar skti ho?
+    - [NCW](org) ko kb contact kiya jaa sakta hai?
+    - Kya aap bata sakte hai ki [cyber cell](org) ko kb contact kar skti ho?
+    - [cyber cell](org) ko kb contact kiya jaa sakta hai?
+    - Kya aap bata sakte hai ki [national cyber crime reporting portal](org) ko kb contact kar skti ho?
+    - [National cyber crime reporting portal](org) ko kb contact kiya jaa sakta hai?
+    - Kya aap bata sakte hai ki [Ministry of women and child development](org) ko kb contact kar skti ho?
+    - [Ministry of women and child development](org) ko kb contact kiya jaa sakta hai?
+    - es organization ko kb contact kar skate hai?
+    - timing kya hai complaint report krne ka yha?
+    - kis time pr main inhe contact kar sakti ho?
+- intent: others
+  examples: |
+    - Hi Rakshak, a bloody rascal is behind my daughter. He trying to harass my little daughter.
+    - Hi Rakshak, meri daughter ke peeche ek bloody rascal pada hai. Vah meri younger daughter ko torture karne ki koshish kar raha hai.
+- intent: othersPrivacy
+  examples: |
+    - Main apni friend ke liye help le rhi..isiliye mai apni identity reveral nhi karna chahti.
+    - I dont want to share my name. Mai apni friend ke behlaf me aapse baat kar rhi.
+- synonym: harassment
+  examples: |
+    - sexual favor maang raha hai
+    - pics aur videos pr vulger comment karta hain
+    - sexual favor maang raha
+- synonym: stalking
+  examples: |
+    - wo mera peecha kr rha hai
+    - follow kar raha hai
+    - social media par mujhe follow kar raha hai
+    - He knows everything about me
+    - Wh mere baare me sab kuch jaanta hai
+    - mujhe follow kar raha hai
+    - follow
+- synonym: masquerading
+  examples: |
+    - koi mere  name, photos aur Insta reel ka use kar ke mai hone ka natak kr rha hai
+    - someone using my photos and identity
+    - Koi mere photos and name ka use kar raha hai
+- synonym: ex-boyfriend
+  examples: |
+    - ex- boyfrien
+- synonym: month
+  examples: |
+    - 2 months
+    - bhut dino
+    - ek month
+    - two months
+- synonym: cybercell
+  examples: |
+    - cyber cell
+    - CYBER CELL
+    - CYBERCELL
+- synonym: cybercrime
+  examples: |
+    - National cyber crime
+    - cyber crime
+    - National Cyber crime reporting portal
+- synonym: MWCD
+  examples: |
+    - National commission for women and child development
+    - ministry
+    - Ministry of women and child developemnt
+- synonym: NCW
+  examples: |
+    - National Commission for Women
+    - nationl commission for women
+    - ncw
+- synonym: online
+  examples: |
+    - Online
+- synonym: months
+  examples: |
+    - 3 months
+- synonym: week
+  examples: |
+    - 2 weeks
+    - three week
+- synonym: day
+  examples: |
+    - 2 days
+    - 10 days
+- synonym: Patna
+  examples: |
+    - kolkata
+- synonym: UTTAR PRADESH
+  examples: |
+    - Uttar Pradesh

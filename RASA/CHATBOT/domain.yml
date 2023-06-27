@@ -1,0 +1,206 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- platform_info
+- name_info
+- event_narration
+- platformBlockInfo
+- greet
+- help_info
+- goodbye
+- duration_info
+- organization_info
+- organization_help
+- contact
+- payment_info
+- legal_advice
+- about_organization
+- help_mode
+- location
+- affirm
+- nlu_fallback
+- privacy_concern
+- time_duration
+- user_event_deny
+- timing_info
+- others
+- othersPrivacy
+entities:
+- accused
+- age
+- duration
+- event
+- gender
+- location
+- mode
+- name
+- org
+- platform
+- platformBlock
+slots:
+  event:
+    type: text
+    influence_conversation: true
+  name:
+    type: text
+    influence_conversation: true
+  platform:
+    type: text
+    influence_conversation: true
+  location:
+    type: text
+    influence_conversation: true
+  duration:
+    type: text
+    influence_conversation: true
+  mode:
+    type: text
+    influence_conversation: true
+  org:
+    type: text
+    influence_conversation: true
+  accused:
+    type: text
+    influence_conversation: true
+  platformBlock:
+    type: text
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: Namste, this is counselling bot to help you in secure environment. How may I help you ?
+  - text: Namste this is a couselling bot, a bot to help you in secure environment .
+  - text: Namaskar, This is counselling bot, main yahan ek secure atmosphere me aapki help karne ke liye hoon.
+  utter_help_info:
+  - text: Yes sure, Hm yha aapki hr tarh se help karne ke liye hai. Kya aap Please yh share krenge ki mai kisse baatcheet kr rha hun?
+  - text: We are here to help you.Kya aap  please mujhe apna name bta skte hain?
+  - text: Sure, main yahaN aapki madad ke lie hoon. Please take a deep breath. Please tell me your name.
+  - text: Ya sure, hum yahan aapki help karne ke liye hain. Kya aap please share karenge ki main kiske sath interact kar raha hun?
+  utter_goodbye:
+  - text: Please bejhijhak hamse kisi bhi time contact kre ydi aapko kisi bhi help ki jaroorat ho.
+  utter_time_duration:
+  - text: Yh Mamle pr nirbhr krta hai. Police authorities will investigate the case and take action accordingly.
+  - text: Yh case pr depend krta hain.
+  utter_event_duration:
+  - text: Kya aap please share karna chahenge ki aap kab se es problem ko face kar rhe hain?
+  - text: Aap kab se isko face kar rhe hain?
+  utter_ncw_help:
+  - text: Please Mujhe btaye ki aap complaint kaise report krna chahenge- online/offline?
+  utter_online_ncw:
+  - text: Apni complaint ki online report krne ke liye please National portal www.crimegainstwomen.gov.in pr jaaye.
+  - text: Online complaint ko report krne ke liye, please  http://ncwapps.nic.in/onlinecomplaintsv2/ pr jaaye. please Complaint Registration pr click krke apni complaint file se phle FAQ's ko dhyan se pdh le.
+  utter_privacy_concern:
+  - text: Hm aapki details ko jaane bina aapki seva krne mai khush hai. Better tarike se aapki help krne ke liye kya aap  please apni problem ko share krengi?
+  - text: Yes sure we are here to help you. Please apni problem ko explain kre.
+  utter_user_event_deny:
+  - text: OK kya aap complaint file krna chahte hain?
+  - text: kya aapko kisi counselling ya legal advice chahiiye.
+  - text: Isme mai aapko legal advice de skta ho. Kya aap chahte ho?
+  utter_legal_advice:
+  - text: you are facing the issue of stalking which is a criminal offense under Section 354D of IPC through the Criminal Law (Amendment) Act, 2013 and Section 67 of Information Technology(Amendment) Act 2008.
+  - text: stalking is a criminal offense under Section 354D of IPC through the Criminal Law (Amendment) Act, 2013 and Section 67 of Information Technology(Amendment) Act 2008. Aap in law  ka use krke apne mamle ki report kr skte hai.
+  utter_organization_info:
+  - text: Aap is maamle me legal action le skte hain. Aap National Cyber Cell, National Commision for Women, Ministry of Women and Child Development aur National Cyber Crime Reporting jaise portals pr complaint kr skte hain.
+  - text: Aap complaint report krne ke liye  following portals pr jaa skte hai- Cyber cell, National Commission for Women, National Cyber Reporting Portal and Ministry of women and child development.
+  utter_ask_event_form_event:
+  - text: Kya aap detail me btayegi ke aap kya problem face kar rahi?
+  - text: Please aap apni problem ko detail me btaye?
+  - text: Please aap apni problem ko detail me btayie jisse mai aapki help kar saku.
+  utter_ask_event_form_name:
+  - text: Kya aap apna name share krne me comfortable hain?
+  utter_ask_event_form_platform:
+  - text: |
+      Kya aap mujhe bata skti hain ki aapko message krne ke liye wah kon se online platform ka use kar raha hain?
+  - text: |
+      Kya wah aapko message/contact karne ke lie kisi online medium ka use kar rhe hain? if yes to kya aap bata sakti hai kis platform ka use kar rhe hain?
+  - text: |
+      Kya aap mujhe batayenge ki vah aapko message ya contact karne ke liye kis platform/medium ka use kar raha hain?
+  utter_ask_event_form_duration:
+  - text: |
+      Kya mai yah jaan sakta hun ki aap es problem ko kitne time se face kar rahi hain?
+  - text: |
+      Kya aap mujhe bata skti hain ki aap kitne time se yh sab face kar rahi hain?
+  - text: |
+      Kya aap please mujhe batayengi ki aap kab se is problem ko face kar rahi hain?  
+  utter_ask_location:
+  - text: |
+      Kya aap mujhe apne state(location) bta sakti hain?
+  - text: |
+      Please aap apni state(loaction) btayiye.
+  utter_payment:
+  - text: I am very happy to inform you that yh service GOI free of cost provide karti hain to aapko koi bhi fees ya charge nhi dena hoga.
+  utter_ask_event_form_platformBlock:
+  - text: |
+      Kya aapne us account ko block/ report kr diya hain?
+  - text: |
+      Kya aap mujhe bata sakti hain ki aapne us account ko report ya block kiya hain ya nhi?
+  - text: |
+      Kya aap please mujhe bta sakti hain ki aapne {platform} pr us account ko report kar diya hain ya nahi?    
+actions:
+- action_about_organization
+- action_contact
+- action_duration_info
+- action_event_form
+- action_help_mode
+- action_location
+- action_name_info
+- action_organization
+- action_platform_info
+- action_timing_info
+- utter_ask_event_form_duration
+- utter_ask_event_form_platform
+- utter_ask_event_form_platformBlock
+- utter_event_duration
+- utter_goodbye
+- utter_greet
+- utter_help_info
+- utter_legal_advice
+- utter_name_info
+- utter_ncw_help
+- utter_online_ncw
+- utter_organization_info
+- utter_payment
+- validate_event_form
+forms:
+  event_form:
+    required_slots:
+      event:
+      - type: from_entity
+        entity: event
+      - type: from_intent
+        value: None
+        intent: event_narration
+        conditions:
+        - active_loop: event_form
+          requested_slot: event
+      duration:
+      - type: from_entity
+        entity: duration
+      - type: from_intent
+        value: None
+        intent: duration_info
+        conditions:
+        - active_loop: event_form
+          requested_slot: duration
+      platform:
+      - type: from_entity
+        entity: platform
+      - type: from_intent
+        value: None
+        intent: platform_info
+        conditions:
+        - active_loop: event_form
+          requested_slot: platform
+      platformBlock:
+      - type: from_entity
+        entity: platformBlock
+      - type: from_intent
+        value: None
+        intent: platformBlockInfo
+      - type: from_intent
+        value: No
+        intent: user_event_deny
+        conditions:
+        - active_loop: event_form
+          requested_slot: platformBlock
