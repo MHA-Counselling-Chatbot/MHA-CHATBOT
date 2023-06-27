@@ -1,0 +1,944 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - Hi Rakshak!
+    - Hello Rakshak!
+    - hi Rakshak!
+    - hello Rakshak!
+    - Hello Rakshak.
+    - Hello
+    - Hi
+    - hello
+    - hiii
+    - hii
+    - hi
+    - Hii
+    - Hi Rakshak.
+    - Hello Rakshak
+- intent: help_info
+  examples: |
+    - I am going insane. I dont understand where to go and whom to ask for help
+    - Hello Rakshak, I am looking help for my daughter.
+    - I need help.
+    - My dad had gone demon. Please save me from him.
+    - I am being tortured at my own home. I need help.
+    - I need help for saving my help.
+    - I need help for filling complaint against doctor.
+    - I need help for putting a bastard in jail.
+    - Hi Rakshak, I am stuck in a marriage. I want to get free from this marriage.
+    - I need help from someone.
+    - Please help me. I want justice for my friend.
+    - What type of help you provide?
+    - i'm in the mood to murder a jerk. are you able to assist me?
+    - i'm in the mood to murder a jerk. can you help me ?
+    - how are you doing, rakshak?  
+    - someone , please help me . i'm in a lot of trouble. 
+    - please, someone, assist me. i am in great trouble .  
+    - please, someone, assist me. i'm in a lot of trouble. 
+    - please, someone, assist me. i am in great trouble . 
+    - hi rakshak , how are you doing? 
+    - my reputation is on the line. please assist me.
+    - my prestige is at stake . please assist me.
+    - could someone please assist me with this matter? i'm in a lot of trouble.
+    - could someone please assist me with this matter? i am in great trouble .
+    - that jerk is going to murder me. could someone please assist me?
+    - that jerk is going to murder me. someone please help me ?
+    - i'm rakshak, and i'd like to extend a warm welcome to you is it possible for you to assist me? 
+    - hello, rakshak. are you able to assist me? 
+    - hello, rakshak. are you here to help me ? 
+    - that bastard will kill me . please, someone, assist me. 
+    - hello, is there anyone who can assist me? 
+    - hello, i'm asking for assistance in order to rescue myself.  
+    - hello, sunita i'm having some problems on this side, and i'm not sure what i'll do. 
+    - hello, i'm in need of assistance. 
+    - the society in which we live is quite cruel.
+    - things aren't looking good right now. i'm concerned.
+    - things aren't looking good right now. i am worried .
+    - rakshak, i'm looking for your help.  
+    - rakshak, i need your assistance. 
+    - rakshak, i need your assistance.  
+    - hello, rakshak. i require assistance in order to safeguard my life.  
+    - hello, rakshak. i require assistance in order to safeguard my life. 
+    - hello, i'm in a bad mood these days.  
+    - i'm terrified. i'm in need of assistance.
+    - today i am quite tense.
+    - hello, i'm searching for assistance. 
+    - hello, rakhska. today i'm angry and disappointed in equal measure.  
+    - hello, rakhska. today i'm angry and disappointed in equal measure. 
+    - now i'm very frustrated.
+    - hello, i'm seeking for assistance.  
+    - i'm seeking for assistance.
+    - i am desperately in need of help . please assist me.
+    - i'm in severe need of assistance. please help me .
+    - hello, i'd appreciate it if you could assist me. 
+    - do hell with your hi , hello . just help me .
+    - i was gang-raped two months ago and my 5-years old son was killed by few scoundrels . i am looking for justice .
+    - i am not interested in your good evening dumbo , just help me . i am very sad .
+    - i was gang-raped two months ago and my 5-years old son was killed . i am looking for justice .
+    - i am forced by my in laws to do job and i am not in the condition to do .
+    - i am almost destroyed i am so tensed i want to commit suicide .
+    - good afternoon rakshak . i am very sad .
+    - rakshak , it seems i am going to be in big trouble . i need your help .
+    - i have been cheated by a groom's side , actually , they all were bloody cons .
+    - i need help , please help .
+    - i really appreciate if you will help me .
+    - i don't care who are you . just tell me can you help me .
+    - hello rakshak , i lost all my savings . a person has cheated on me .
+    - hi rakshak , please help me .
+    - hello , i need help to lodge a complaint , please help .
+    - hi . actually , i am stuck somewhere and i can sense danger . please do help .
+    - i am stuck in a very bad phase of my life .
+    - hi , can you help me ?
+    - i am working as a care taker in shakuntala devi girls hostel bcetw , and i was raped by 3 men last night , they will go to hell for sure
+    - i am stuck here badly . i was bluffed in the name of job and career by con men .
+    - i am so frustrated . i am being tortured .
+    - hi rakshak , how are you ? i have heard a lot about you that you help all those who need you .
+    - actually i need to report a hazardious incident which i saw 2 days before .
+    - hi rakshak i am very sad i need help .
+    - hi rakshak how are you doing today ?
+    - i was being raped by a mutual friend last night i am in trauma since then .
+    - i was raped last night in the parking campus of my apartment by the watchman of my building . he will go to hell .
+    - hello , i want to tell you something .
+    - hi rakshak , i am afraid . some people are threatening my mother to kill her .    
+    
+- intent: goodbye
+  examples: |
+    - no , not at all . just get lost .
+    - that's all for now , bye .
+    - keep your sorry in your pocket , bye .
+    - no way , you pissed me off a lot .
+    - you're impossible , goodbye .
+    - that's it , bye .
+    - i am done , bye now .
+    - no and keep your apologies with you .
+    - why the hell are you repeating your words , get lost . bye .
+    - no way , not at all . get lost .
+    - no way , just get lost .
+    - no , that's enough of taking help from you . get lost .
+    - this is too much now , bye .
+    - no way , i will think twice before contacting you .
+    - not at all , just get lost .
+    - no , i am done with you . get away .
+    - nope , see you later .
+    - no , that's all for now .
+    - no way , forgive me , please .
+    - no , not at all , forgive me .
+    - that's all , bye .
+    - no way , never .
+    - i think i will consult with them first , bye .
+    - no need , get away .
+    - don't repeat the same thing , you bullshit . goodbye .
+    - no way , bye .
+    - i am done , bye .
+    - i am going now , bye .
+    - do you really think so , i will ever ask you for anything you dumbo .
+    - don't you undersatnd , i am not interested in your service . goodbye .
+    - no ways .
+    - again sorry , do hell with your sorry . bye .
+    - not at all , never .
+    - no , just get lost . bye .
+    - not at all , get lost .
+    - no ways , i am done with you .
+    - take your sorry , i don't need .
+    - not at all .
+    - no need of your help anymore .
+    - pardon , my foot . goodbye .
+    - not at all you foolish person . goodbye .
+    - not at all you idiot , i am done with taking help from you .
+    - no way , and never . you're pathetic .
+    - no way . get lost , bye .
+    - keep your sorry with you . bye .
+    - no need of your help anymore , bye .
+    - no way , please spare me .
+    - not at all , goodbye . get lost .
+    - just get lost .
+    - no way , infact i am sorry . good bye .
+    - no no bye . i will be back later .
+    - no dear .
+    - ok i will think about this later .
+    - it's really nice of you . bye .
+    - you are always so helpful .
+    - no , thanks a lot . you are really great .
+    - no , that's all . it was nice talking to you .
+    - it was very thoughtful of you . bye .
+    - that's all . i very much appreciate your support .
+    - nope , i am grateful for your help .
+    - no dear , thanks a lot .
+    - no no dumbo , enough for now .
+    - no , get lost .
+    - enough of your help , get lost .
+    - that's all
+    - not way rascal .
+    - enough of your fucking help .
+    - you bastard tested my patience .
+    - ah ! no more help needed , stupid that's enough .
+    - ah ! no more help needed , that's enough bastard .
+    - do hell with your help .
+    - get lost , not very much satisfied with your assistance .
+    - get lost now .
+    - i don't need any more fucking help from you .
+    - you tested my bloody patience very well .
+    - ok fine you moron .
+    - enough of your help .
+    - i said , get lost .
+    - no , not at all . you tortured me a lot .
+    - get lost , bye .
+    - no , not at all . your assistance is not satisfactory .
+    - oh god ! you are impossible . bye .
+    - no more help needed , get lost .
+    - you know what , i don't need your help anymore . you are too complicated .
+    - okay , bye now.
+    - ok , bye .
+    - nope
+    - okay , bye now .
+    - no , you are too irritating .
+    - no no , enough for now .
+    - that's enough . seeking help from you is too irritating .
+    - bye .
+    - no ways , don't need you help anymore .
+    - no i am in hurry .
+    - no i wanted this much information only .
+    - no only this much .
+    - no bye . i am geting late .
+    - no i will come later i have urgent work .
+    - i will be back .
+    - no ,
+    - no i will come later i am busy .
+    - ok .
+    - let it be i will get it from somewhere else bushit app.\.
+    - i am in hurry please will talk to you later .
+    - see you .
+    - no bey .
+    - no , i am in hurry .
+    - no you are bullshit repetative app .
+    - i want to take action but let me first discuss with my parents and then i will be back .
+    - okay , bye .
+    - okay .
+    - nope , see you later . bye .
+    - see you later , bye .
+    - no , that's all for now . bye .
+    - talk to you later .
+    - no i am hurry .
+    - no bye take care
+    - not now , bye .
+    - no , thank you . bye .
+    - no , it's nice interacting with you .
+    - no , thanks . it's enough for now .
+    - see you later if need anything .
+    - ok , thanks a lot . let me think and will back to you .
+    - no , that's all . bye .
+    - no thanks . i will rest do my own .
+    - not right now .
+    - no , thanks , it's really great job done by you rakshak .
+    - i will catch you later because i don't know what to do in this situation .
+    - not now , thanks for all your kind support .
+    - see you later .
+    - no , rest i will manage on my own .
+    - no , i will catch you later .
+    - no , i will manage now .
+    - thanks for your help , bye .
+    - no , thanks , bye .
+    - no , thanks . enough for now .
+    - thanks a lot , rakshak . rest i will do on my own , bye .
+    - no , thanks , bye
+    - ok , thanks for you help .
+    - no thanks rakshak .
+    - ok , thanks will follow for the same later .
+    - not now . bye .
+    - let me think , i will catch you later .
+    - i will catch you later .
+    - bye , i will catch you later .
+    - rest i will manage . thank you .
+    - no , thanks a lot for all the information .
+    - that's sufficient .
+    - nope , that's all for now .
+    - no thanks . enough for now .
+    - enough for now .
+    - no , rest i would see how to do it .
+    - no thanks , it's enough for now .
+    - no , it's sufficient for now .
+    - no . thanks . bye .
+    - no , no , enough of your stupid help .
+    - that's all , you tested my patience .
+    - no way .
+    - enough of your stupid assistance .
+    - oh , my goodness ! there is no need for more assistance ; this is plenty .
+    - i'm not interested in your assistance anymore , bye .
+    - become disoriented , dissatisfied with your aid .
+    - bloody hell ! no way .
+    - omg ! yo're impossible .
+    - i don't require any further assistance from you fool , that's enough .
+    - i said no .
+    - no way , you are a patience tester .
+    - you put my patience to the test , no more help needed .
+    - no chance , just go .
+    - thanks for nothing , bye .
+    - enough of your assistance .
+    - no way , not at all .
+    - thanks for nothing . goodbye .
+    - get lost now . bye .
+    - i don't require any further assistance from you idoit , that's enough .
+    - thanks for putting my tolerance to the test .
+    - i don't need your help anymore , go away .
+    - no chance , go away now .
+    - noo way .
+    - omg , not even a single question , good for you .
+    - not at all , enough of your help now .
+    - enough of your assistance ; thanks for nothing .
+    - no , no , that's enough for the time being .
+    - that is all there is to it . it's too inconvenient to seek assistance from you .
+    - no way , goodbye .
+    - no way , never . goodbye .
+    - no way , i don't require your assistance any longer . .
+    - you put my endurance to the test .
+    - fine , thank god you didn't pissed me off this time .
+    - thanks for nothing .
+    - no , no , that's enough of your help .
+    - no way , just go away .
+    - no way , this is enough .
+    - no way , i don't require your assistance any longer .
+    - no ways , never .
+    - fine , you're truly a test of patience .
+    - no ways , you just pardon me . bye .
+    - no ways , not at all .
+    - how may times i told you , i don't need your apologies . get lost .
+    - not at all , get lost . bye .
+    - no ways , you tested my patience .
+    - don't need your help anymore .
+    - no way , you're pathetic . that's all .
+    - okay , bye for now .
+    - not at all . you put my tolerance to the test .
+    - in no way .
+    - sin no way .
+    - no way , i don't need your assistance any longer .
+    - goodbye , i will never ever connect with you .
+    - no ways.
+    - good-bye , you are of no use .
+    - okay , fine .
+    - no , goodbye .
+    - i got it , it's not your cup of tea . get lost .
+    - now , it's too much , i don't need your help . if i know him , i would surely kill him . bye .
+    - i want to punish that rascal but i am not sure about legal action right now . see you .
+    - i am done with taking a favour from you .
+    - ok , let me think , bye .
+    - nope , that's all from my end .
+    - okay , see you later , bye .
+    - that's alright . goodbye !
+    - i will talk to you later , bye .
+    - let me think first , bye .
+    - fine , i will do that . goodbye .
+    - what the heck ! repeating the same thing . i don't need your help anymore , bye
+    - no need , thanks a lot for wasting my time . goodbye .
+    - ok , thanks for your information . i will look for you soon . bye .
+    - oh , i think i should look for help to some other place . you are completely a waste of time . get lost .
+    - no thanks , enough for now . bye .
+    - i will get back to you after the mutual discussion with my family .
+    - no , thanks . enough for now . bye .
+    - if i would be knowing the respective legal authority , why should i have come to you ? you are useless . get lost .
+    - ok , thanks rakshak . you are great .
+    - ok , let me think about it once .
+    - ok , let me discuss this with my family first , then i will get back to you .
+    - no thanks , rest i will do my own .
+    - hopefully , i will complain after some time , let me think .
+    - okay , i will check , bye now .
+    - no , that's fine .
+    - great ! see you again if need anything else , bye .
+    - let me talk to my parents , then i will be back to you .
+    - thank you for the help . bye .
+    - thanks , bye now .
+    - let me think once , i will be back to you if need more help on this .
+    - we apologize for the inconvenience . would you need some more assistance on it ?
+    - that's nice i have such options . let me discuss with my father once , bye .
+    - catch you later if need anything , bye .
+    - no , it's fine for now , bye .
+    - thanks for all the information , bye now .
+    - let me think first , hopefully i will follow you some other day .
+    - thanks a lot for all your support , bye now .
+    - okay , thanks for the information . i will catch you later .
+    - no , i am taking your leave now, thanks .
+    - no , i don't need your useless suggestions , bye .
+    - no , i am taking your leave now , thanks .
+    - let me think about it then i will get back to you . bye .
+    - ok , thanks for your help . bye .
+    - no thanks , that's all for now . bye .
+    - no thanks . enough for now . bye .
+    - let me discuss this with my family first , then i will get back to you . bye .
+    - what i will do with this . you have gone mad . get lost .
+    - no thanks , rest i would do my own . bye .
+    - ok , let me discuss it with my parents and i will get back to you . bye .
+    - ok , thanks for the information . i will get back to you after a discussion with my family .
+    - no thanks. bye.
+    - ok, thanks a lot. you are hopeful.   
+    - thanks a lot. enough  for now. bye.
+    - no thanks, i will discuss and come back to you. 
+    - no thanks, i will come back to you later. 
+    - no, thanks bye. 
+    - no thanks.
+    - ok, let me discuss with my husband then i will get back to you. bye. 
+    - ok, thanks for your useful information. bye.   
+    - thanks a lot. bye.
+    - ok, thanks for the information. let me think about it. bye.   
+    - ok, thanks. it's enough for now. bye. 
+    - no, thanks. bye. 
+    - thank you rakshak. bye.
+    - ok! i will thing and then let you know. thank you.
+    - thank you, bye. 
+    - no thanks, bye.   
+    - let me discuss this with my family, then i will get back to you. bye.   
+    - no thanks, enough for now, bye. 
+    - ok! i will think and then let you know. thank you.
+    - no, thank you again. 
+    - no thanks, bye. 
+    - ok, let me discuss on it with my family. i will get back to you. 
+    - no thanks, enough for now. bye.   
+    - no thanks. it's enough for now. bye.
+    - enough for now. bye.
+    - thanks for your suggestions. i will get back to you after discussion with my family.
+    - no, thank you, bye. 
+    - no, thank you again bye.   
+    - i think helping me is not your cup of tea. get lost.
+    - no thanks. enough for now. bye.
+    - thansk a lot rakshak. you are great.
+    - ok! i will discuss it with my brother and then i let you know.
+    - ok thanks for your help. bye.
+    - thanks a lot rakshak, bye for now. 
+    - let me think,  i will follow you some other day. 
+    - okay, i will check and do on my own. 
+    - okay, thanks a lot for this information. 
+    - great! i am taking your leave now.
+    - ok! thanks a lot again i will discuss it with my friend and let you know.
+    - yes, i will proceed further but after some discussion with my friend again. thank you bye. 
+    - thank you, it sounds quite good but for now bye. 
+    - no, thank you very much. 
+    - ok, thanks a lot, bye for now. 
+    - ok! let me discuss this to my friend and then i will come back to you.
+    - no, thank you bye.   
+    - no, thank you. 
+    - ok! thanks a lot. i will get to you if i get any difficulty to fill it up.
+    - let me think. bye for now.
+    - that's fine. see you later, bye. 
+    - no.
+    - nope, thank you very much for all your support. 
+    - for now, thank you bye.   
+    - no, i am done. 
+    - no, thanks. 
+    - oh! let it be. you truly tested my patience.
+    - that's quite simple. i will do now, bye.   
+    - okay, thank you for this information. i am done, bye.
+    - thanks a lot, bye now. 
+    - helping anyone is not your cup of tea. i don't need your help bye.
+    - oh! i see. let me think. i will follow you some other day.
+    - no, that's all. 
+    - nope.
+    - i can do this, bye now. 
+    - fine, let me think, bye.   
+    - no, bye. 
+    - great! i am done now, bye. 
+    - thanks a lot for all your support. bye!
+    - oh, no! you asked these many questions and provided this solution. this is ridiculous, i don't need your consultation. get lost. 
+    - i am done for now, bye. 
+    - no, that's all for now. 
+    - ummm, i guess no. i will catch you later on. 
+    - no, that's all. bye. 
+    - okay, bye now.
+    - wonderful! i am taking you leave now.
+    - let me discuss this with my brother first.
+    - no, i will do on my own. 
+    - wonderful! i am done now. see you.
+    - now you are irritating me. get lost i will help myself. bye.
+    - i know it's a wasting of my time to talk to you. you are just a time-wasting machine. just get lost.
+    - ok, thanks a lot, let me discuss this with my family. i will get back to you. bye.   
+    - no, thanks a lot. rest, i would do on my own. bye. 
+- intent: privacy_concern
+  examples: |
+    - i can't reveal my identity .
+    - i don't want to reveal my identity . i want to help my friend and her mother as her mother is not educated . i am talking on her behalf .
+    - no , i don't want to disclose my name . i want to make a police complain against him . could you help me ?
+    - why the hell is my identity required , can't you help me without this ?
+    - why should i ? it's not your concern , understand ?
+    - my name is not your concern dumbass but anyways i am a sunita , a loco pilot used to drive train .
+    - i don't want to reveal my identity , just help me .
+    - why the hell are you asking my name . help my grandma , she is being beaten and tortured by my father for property .
+    - why the hell do you need my name ? just help me .
+    - why the hell are you asking my name ? can't you help me without this ?
+    - why would i tell you my name .
+    - i am a doctor by profession . i don't want to reveal my identity . can't you help me without my name ?
+    - can't you help me without knowing my name ?
+    - after whatever happened to me , i don't want to reveal my identity . i am very sad about my situation .
+    - i can't tell my name .
+    - why do you need my name ? just tell me you can help me or not , everyone is asking name , age , address but no one helps .
+    - why do you need my fucking name ? just tell me you can help me or not , everyone is asking name , age , address but no one helps .
+    - i can't reveal my information .
+    - why are you inquiring about my name ? my grandmother is being assaulted and tortured by my monster father for the sake of property .
+    - why are you stupid inquiring about my name ? my grandmother is being assaulted and tortured by my monster father for the sake of property .
+    - why are you fool inquiring about my name ? my grandmother is being assaulted and tortured by my monster father for the sake of property .
+    - why on earth do you require my name ? simply assist me .
+    - why would i reveal my identity to you ?
+    - my name is not your concern , stop annoying me just tell me you can help or not .
+    - my name is not your concern ,stop\o annoying me just tell me you can help or not .
+    - why are you bothering to ask my name , stop asking useless question ?
+    - why are you bothering to ask my name , stop asking pointless question ?
+
+
+- intent: name_info
+  examples: |
+    - i am [arun sinha](name) . i want those monsters men to get punished as soon as possible .
+    - i am [supriya singh](name) , [32 years old](age) .
+    - i am [rishika](name) of [16](age) .
+    - i am [ramya](name) of [17](age) .
+    - i am [supriya singh](name) , [25 years old](age) .
+    - i am [shradha](name) of [22](age) .
+    - i am [minakshi](name) of [24](age) .
+    - i am [dipika](name) of [23](age) .
+    - i am [swarnima sinha ](name), [24 years old](age) .
+    - i am [shipra] of [21](age) from bihar .
+    - i am [meena](name) of [28](age) and i am from up .
+    - i am a [25 years old](age) working woman . can you tell me about your services ?
+    - i am [pallavi](name) studying in class 11 .
+    - i am [radha](name) and i am of [26](age) . i am dying . i am looking for someone to save my life .
+    - i am [sneha](name) and i want to lodge a complain against him . i am of [29](age) .
+    - i am [ramya](name) and i am [22](age) .
+    - i came to my village 2 days ago . here i saw a girl who is being forcefully getting married to man who is approx. twice her age .
+    - i am [prerna](name) , [28 years old](age) .
+    - i am [swapnil](name) , [23 years old](age) .
+    - i am [riya](name) [23](age) form assam .
+    - i am [abha sinha](name) .
+    - i am [18 years old](age) .
+    - i am [shreya](age) from up and i am of [23](age) .
+    - i am [durga rani](name) for samsatipur bihar . i am of [26](age) .
+    - i am [suruchi](name) from navada bihar . i am of [25](age)
+    - yes , i am [rekha](name) [29](age) .
+    - i am swaparna gupta , 23 years old .
+    - i am prantika goyal .
+    - i am seema 29 . i want to go for police complain .
+    - my name is sudhanshu mishra , 14 years old .
+    - i am diksha of 17 .
+    - i am sudha of 21 .
+    - i am kritika , 24 years old .
+    - i am divya , 26 .
+    - i am sonali of 19 .
+    - i am sudha of 23 form malad mumbai .
+    - i am swarika singh , 20 years old .
+    - i am rubika from italy . i am 26 years old .
+    - i am geeta singh , 25 years old .
+    - i am sushmita mondol from kolkata . i am 19 years old .
+    - why are you wasting my time , just help me . nevermind , i am sumita singh , 37 years old .
+    - my name is kamla rani and i am 32 years . i am a married woman but i live alone .
+    - my name is sarojni kumari . i am 34 years and i am a single woman .
+    - my name is ranjana and i am 34 years .
+    - my name is pratika jaiswal , i am presently 22 years age .
+    - i am swarika baranwal .
+    - i am smita of 26 and have been robbed by all the means .
+    - i am devika sharma of 24 .
+    - my name is priyanshi and i am 25 yr age .
+    - i am garima sharma and join a protest with my seniors' last night at subhdargunj place and a few bastards had rapped with me very brutal . i am looking for help . please save me .
+    - i am divya singh , 30 years old . i am a single mother .
+    - i am rashmi desai , a student at the university of hyderabad .
+    - i am manushree of 21 .
+    - my name is sarita and i am 34 years .
+    - my name is priyanka and i am 926963 .
+    - my name is vani kapoor and i am 30 years .
+    - my name is kamla prakash and i am 34 years .
+    - my name is priyanka and i am 24 years .
+    - there is a girl named nita . she was just 14 years girl child . she was brutally raped by 4 men 2 days before and i saw while returning from market late night that those monsters were abusing her and threw her from 14th floor building .
+    - my name is kamla prakash and i need help for my mother .
+    - my name is karishma and i am 34 years . i am living in this apartment alone since six month .
+    - i am saiyoni kumari and i am 34 years .
+    - i am akansha sinha , 23 years old .
+    - i am pratiksha of 26 .
+    - i am sneha singh , 23 years old girl .
+    - i don't want to reveal my identity . i can just tell you that i am 27 years old .
+    - my name is vantika and i am a single woman non married i am 32 years old . .
+    - i am sanjana and i am 32 years age .
+    - my name is priyanshi and i am 34 years . .
+    - my name is kamla rani and i am 34 years old .
+    - my name is cenorita . and i am 32 years .
+    - my name is pallavi singh and i am 30 years .
+    - my name is karishma tanna and i am 29 years old .
+    - my name is kamla and my husband's name is kamlesh prasad . please help me .
+    - my name is dolly kumari , i am 34 years old .
+    - my name is sarita bai and i am 56 years old .
+    - my daughter's life is in danger , please do help me . i am shamita of 26 .
+    - i am swarika baranwal , 19 years old . i am a college student .
+    - i am aakash garg , 15 years .
+    - i am shweta singh , 23 years old .
+    - i am aiman arfi , 16 years old .
+    - my name is anita modi and i am 34 years .
+    - my name is lalita devi . and i am 55 years old .
+    - i am sarita agarwal .
+    - my name is kamla and my husband's name is kamlesh prasad .
+    - my name is rita devi and i am 40 years old .
+    - i am surbhi sinha , 23 years old
+    - i am stuti , a 18 year old girl from sindri , dhanbad .
+    - i am sarita shukla . i am a school teacher . i want to help one of my students .
+    - why are you asking my name , useless question ?
+    - i am kishori singh , a teacher in a school of tankuppa village of gaya district .
+    - i am shreya dhar . i have just finished my 10th boards .
+    - my name is dipika rajhansh and i work as a bartender in night & bar restandant .
+    - my name is karuna and i am 34 years .
+    - my name is karuna prakash and i am 32 years .
+    - my name is sandhya singh and i am 34 years old .
+    - my name is kabita kumari and i am 32 years .
+    - my name is pallavi and i am 35 years .
+    - my name is kabita and i am in 34 years .
+    - no i am scared he is bloody psycho .
+    - no i am scared he is bloddy psycho .
+    - no i am scared he is psycho .
+    - i am abhinavi , 23 years old .
+    - i am rashmi singh , 25 years old .
+    - i am akanksha sinha from jharkhand .
+    - i am swarika sen , 19 years old .
+    - i am pallivi jha from up .
+    - i am nisha parmar , 23 years old .
+    - my name is sushila and i am 55 years .
+    - my name is nishita and i am 34 years .
+    - my name is priyanka and i am 23 years .
+    - my name is <person name> and i am <person age> .
+    - i am devika of 24 .
+    - i am meghna of 26 .
+    - i'm 34 years old and my name is anita modi .
+    - lalita devi is my name . i'm 55 years old , by the way .
+    - i'm rita devi , and i'm 40 years old .
+    - i'm stuti , a dhanbad-based 18-year-old girl from sindri .
+    - i'm stuti , a dhanbad-based 18-year-old girl from sindri . .
+    - sarita shukla is my name and i work as a teacher in a public school . i am willing to assist one of my student .
+    - my name is kishori singh , and i work as a teacher in tankuppa village , gaya district . if this much information is sufficient you dumboo,\, then help me instead of asking questions .
+    - my name is kishori singh , and i work as a teacher in tankuppa village , gaya district . if this much information is sufficient , then help me instead of asking questions .
+    - my name is kishori singh , and i work as a teacher in tankuppa village , gaya district . if this much information is sufficient , then help me you annoying man instead of asking questions .
+- intent: event_narration
+  examples: |
+    - someone is bothering me.
+    - I am a model. One of my team member is [blackmailing](event) me.
+    - My ex is disturbing me.
+    - He has my private photos. He is  [blackmailing](event) me and saying that he will viral those phtos if i dont patch up with him.
+    - I am waiteress in one hotel. One of the customer coming to me daily and demanding fentabulous service. In starting , I did not understand the meaning of fentabulous service. and I said yes to him. But after that he is [stalking](event) me on social media.
+    - that rascal wants me to show to his family that I am his wife and he wants me to stay in his home for a month. After my refusel, he is trying to [defame]{"entity":"event","value":"harassment"} me and forcing me to accepting his proposel.
+    - Rakshak, [someone is chasing]{"entity":"event","value":"stalking"}me badly.
+    - I go for morning walk daily, but know i have a feeling that someone is [following](event){"entity":"event", "value":"stalking"} me there. and now he is texting me on whatsapp. I am scared now.
+    - I am a divorcy women, and i am taking care of my daughter alone. Now i am feling that my boss has a bad eye on me in the office. He is asking me a [sexual favour](event) and stalking me on my social media. Also he is sending me vulger videos and photos.
+    - He has some photos of mine, which he took from my phone without knowledge. Now he is [writing vulger comments]{"entity":"event","value":"harassment"} on my social medial photos.
+    - Recently I got befriended by a boy on instagram and i was so happy. But now he is [blackmailing]{"entity":"event","value":"harassment"} me.
+    - someone is [stalking](event)me.
+    - I met a boy in the club and I talked very much with him. But now i am noticing that he is [stalking](name) me. He is standing outside my office daily. I am afraid of him.
+    - One rascal is spreading me morphed picture online and [blackmailing]{"entity":"event","value":"harassment"} me for money and sex.
+    - one rascal is [stalking](event) me on social media and asking for date. I am a teacher and my reputation on the stack.
+    - He always write a [vulger comment]{"entity":"event","value":"harassment"} on my pics and video. I blocked him several times but he comes with new account everytime.
+    - He is [writing vulger comments]{"entity":"event","value":"harassment"} and sharing adult movies.
+    - I was going to Kolkata to Keral and I met a boy. He was very nice to me. Thats why we exchanged the phone numbers but now he is torturing me.
+    - He is sending my daily photos to me on whatsapp. He knows everything about me what I am doing, where I am going  .
+    - Yesterday someone texted me and told me that he knows me and talking with me from last 3 months.
+    - and he told me that [someone using my photos]{"entity":"event","value":"masquerding"} , reels and videos and trying to impersonating my identity .
+    - yes, he shared that website link also and checked that. That website is full of my pics, reels and videos. Please help me.
+    - [someone using my identiy]{"entity":"event","value":"masquerding"}.
+    - My ex-boyfriend is [following]{"entity":"event","value":"stalking"} me online as well as offline. If i dont accept his proposel he will kill me. I am scared. Please help me.
+    - He is asking [sexual favour]{"entity":"event","value":"harassment"} for my promotion. This is very disgusting. Please help.
+    - He has some private pictures of mine. If i did not sex with him, he will [viral all the pictures online]{"entity":"event","value":"masqerding"} and kill me.
+    - please help me, he will kill me.
+    - He proposed me and I said No to him. After that he started to [abusing]{"entity":"event","value":"harassment"} me . I hurted his ego. 
+    - Someone is [blackmailing]{"entity":"event","value":"harassment"} me by morphed my picture .
+    - Somebody is [writing vulger comments]{"entity":"event","value":"harassment"} on all the videos. Now I can not tolerate.
+  
+- intent: platform_info
+  examples: |
+    - he is using [Facebook](platform) and whatsapp for writing vulger comments.
+    - He sends videos and message on [whatsapp](platform).
+    - [Facebook](platform)
+    - [Whatsapp](platform)
+    - [Instagram](platform)
+    - he is using [whatsapp](platfrom).
+    - he is using [Facebook](platfrom).
+    - he is using [instagram](platform).
+    - [twitter](platform).
+    - he is bothering me on [whatsapp](platform).
+    - He is using [facebook](platform) for sending me edited videos.
+- intent: platformBlockInfo
+  examples: |
+    - [Yes](platformBlock). But he always uses new number fro texting me. 
+    - [No](platformBlock). I did not block him. Could you please tell me how to block him?
+    - [no](platformBlock), I did not block him.
+    - [no](platformBlock).
+    - [haa](platformBlock), I blocked him. 
+    - [No](platformBlock) i did not.
+    - [Yes](platformBlock) I blocked him.
+    - [Nahi](platformBlock) Kiya hai.
+- intent: organization_help
+  examples: |
+    - I want to file complaint throughr [cyber cell](org).
+    - How to report complaint using [cyber cell](org).
+    - How can I contact [cyber cell](org)?
+    - I am thinking about [cyber cell](org) option.
+    - Can I file complaint using [cyber cell](org)?
+    - I am searching to file a complaint through [cyber cell](org).
+    - I am thinking about [cyber cell](org) option.
+    - How can I file a complaint?
+    - I want to file a complaint using [cyber cell](org).
+    -I want to file complaint throughr [cyber crime reporting portal](org).
+    - How to report complaint using [cyber crime reporting portal](org).
+    - How can I contact [cyber crime reporting portal](org)?
+    - I am thinking about [cyber crime reporting portal](org) option.
+    - Can I file complaint using [cyber crime reporting portal](org)?
+    - I am searching to file a complaint through [cyber crime reporting portal](org).
+    - I am thinking about [cyber crime reporting portal](org) option.
+    - How can I file a complaint?
+    - I want to file a complaint using [cyber crime reporting portal](org).
+    - I want to file complaint throughr [NCW](org).
+    - How to report complaint using [NCW](org).
+    - How can I contact [NCW](org)?
+    - I am thinking about [NCW](org) option.
+    - Can I file complaint using [NCW](org)?
+    - I am searching to file a complaint through [NCW](org).
+    - I am thinking about [NCW](org) option.
+    - How can I file a complaint?
+    - I want to file a complaint using [NCW](org).
+    - I want to file complaint throughr [MWCD](org).
+    - How to report complaint using [MWCD](org).
+    - How can I contact [MWCD](org)?
+    - I am thinking about [MWCD](org) option.
+    - Can I file complaint using [MWCD](org)?
+    - I am searching to file a complaint through [MWCD](org).
+    - I am thinking about [MWCD](org) option.
+    - How can I file a complaint?
+    - I want to file a complaint using [MWCD](org).
+
+- intent: help_mode
+  examples: |
+    - Help me to report complaint [online](mode).
+    - Help me to report complaint [offline](mode).
+    - How can I file a comlaint [offline](mode) in NCW?
+    - Please help me in NCW [offline](mode) option.
+    - help me in [Online] (mode) complaint
+- intent: duration_info
+  examples: |
+    - He is following me from [3 months](month).
+    - I am facing this issue from a [month](month)
+    - I am facing this issue from a [week](week).
+    - its been a [months](month) now.
+    - its been a [week](week) now.
+    - [2 weeks]{"entity": "duration", "value": "week"}
+    - [2 days]{"entity": "duration", "value": "day"}
+    - [10 days]{"entity": "duration", "value": "day"} se mai es issue ko face kar rhi ho.
+    - more than a [month](month).
+    - more than a [week](week).
+    - from [three week]{"entity": "duration", "value": "week"}
+    - its more than a [week](duration) now. please do something.
+    - 1 [week]{"entity":"duration", "value":"week"}
+    - 2 [week]{"entity":"duration", "value":"week"}
+    - 1 [month]{"entity": "duration", "value": "month"}
+    - 2 [months]{"entity": "duration", "value": "month"}
+- intent: user_event_deny
+  examples: |
+    - No
+    - NO,I have explained everything. 
+    - I explained everything. Now please help me.
+    - [No](platformBlock).
+- intent: legal_advice
+  examples: |
+    - I want legal advice.
+    - Please give me legal advice.
+    - I need legal help.
+    - I want legal help.
+    - No, I want only legal advice.
+    - I am facing stalking, Can you give me some legal help.
+    - I am facing stalking, Can you give me some legal advice.
+    - I want to take legal action on him.
+    - I want to take legal action on them.
+
+- intent: organization_info
+  examples: |
+    - Can you please tell me How to file a complaint of this?
+    - How can I use these laws for filing a complaint?
+    - How can I use these laws forrepoting a complaint?
+    - Yes, I want to file a complaint.
+    - YeS, I want to report a complaint.
+    - How can I report?
+    - I want to take legal action.
+    
+
+- intent: affirm
+  examples: |
+    - Yes, I want legal advice.
+    - yes
+    - Yup
+    - yes, I want to file a complaint.
+    - yes, I want to report a complaint. How to do that?
+    - yes. How to report this case?
+    - yes.
+    - yes . I blocked him.
+- intent: location
+  examples: |
+    - I am from Motihari, [patna{"entity": "location", "value": "Patna"}
+    - I am from [ASSAM](location).
+    - [Punjab](location).
+
+- intent: contact
+  examples: |
+    - Is there any helpline number for contacting NCW?
+    - Is there any helpline numner so I can contcat NCW?
+    - Is there any number for contacting NCW?
+    - Is there any number so I can contcat NCW?
+    - Is there any phone number for contacting NCW?
+    - Is there any phone numner so I can contcat NCW?
+    - Is there any contact number for contacting NCW?
+    - Is there any contact numner so I can contcat NCW?
+    - How can I contcat them?
+    - How can I contact this organization?
+    - Plese give me contact number so I can ask about procedure.
+    - Plese give me number so I can ask about procedure.
+    - Plese give me phone number so I can ask about procedure.
+    - Plese give me helpline number so I can ask about procedure.
+- intent: payment_info
+  examples: |
+    - How much I am supposed to pay for filing complaint throught this organization?
+    - How much I need to pay for filing complaint throught this organization?
+    - How much I have to to pay for filing complaint throught this organization?
+    - How much rupees am I supposed to pay for filing complaint throught this organization?
+    - How much rupees do I need to pay for filing complaint throught this organization?
+    - How much rupees I have to to pay for filing complaint throught this organization?
+    - How much I am supposed to pay for reporting complaint throught this organization?
+    - How much I need to pay for reporting complaint throught this organization?
+    - How much I have to to pay for reporting complaint throught this organization?
+    - How much rupees am I supposed to pay for reporting complaint throught this organization?
+    - How much rupees do I need to pay for reporting complaint throught this organization?
+    - How much rupees I have to to pay for reporting complaint throught this organization?
+    - How much they charge?
+    - How much they cahrge for reporting a complaint?
+    - How much they charge for filling a complaint?
+    - How much fees do I need to pay?
+
+   
+
+
+- intent: about_organization
+  examples: |
+    - Can you please tell me what is [NCW](org)?
+    - Could you please tell what is [NCW](org)?
+    - Would you tell me what is [NCW](org)?
+    - Can you please tell me about [NCW](org)?
+    - Could you please tell about [NCW](org)?
+    - Would you tell me about [NCW](org)?
+    - I dont know about [NCW](org).
+    - I know nothing about [NCW](org).
+    - Can you please tell me what is [MWCD](org)?
+    - Could you please tell what is [MWCD](org)?
+    - Would you tell me what is [MWCD](org)?
+    - Can you please tell me about [MWCD](org)?
+    - Could you please tell about [MWCD](org)?
+    - Would you tell me about [MWCD](org)?
+    - I dont know about [MWCD](org).
+    - I know nothing about [MWCD](org).
+    - Can you please tell me what is [cyber cell](org)?
+    - Could you please tell what is [cyber cell](org)?
+    - Would you tell me what is [cyber cell](org)?
+    - Can you please tell me about [cyber cell](org)?
+    - Could you please tell about [cyber cell](org)?
+    - Would you tell me about [cyber cell](org)?
+    - I dont know about [cyber cell](org).
+    - I know nothing about [cyber cell](org).
+    - Can you please tell me what is [cyber crime reporting portal](org)?
+    - Could you please tell what is [cyber crime reporting portal](org)?
+    - Would you tell me what is [cyber crime reporting portal](org)?
+    - Can you please tell me about [cyber crime reporting portal](org)?
+    - Could you please tell about [cyber crime reporting portal](org)?
+    - Would you tell me about [cyber crime reporting portal](org)?
+    - I dont know about [cyber crime reporting portal](org).
+    - I know nothing about [cyber crime reporting portal](org).
+- intent: timing_info
+  examples: |
+    - At what time I can contact them?
+    - can you tell me the timing info?
+    - can you tell me when can I contact them?
+    - At what time I can contact [NCW](org)?
+    - can you tell me the timing info of [NCW](org)?
+    - can you tell me when can i contact [NCW](org)?
+    - At what time I can contact [cyber crime reporting portal](org)?
+    - can you tell me the timing info of [cyber crime reporting portal](org)?
+    - can you tell me when can i contact [cyber crime reporting portal](org)?
+    - At what time I can contact [cyber cell](org)?
+    - can you tell me the timing info of [cyber cell](org)?
+    - can you tell me when can i contact [cyber cell](org)?
+    - At what time I can contact [MWCD](org)?
+    - can you tell me the timing info of [MWCD](org)?
+    - can you tell me when can i contact [MWCD](org)?
+    
+- intent: others
+  examples: |
+    - Hi Rakshak, a bloody rascal is behind my daughter. He trying to harass my little daughter.
+- intent: othersPrivacy
+  examples: |
+    - I want help for my friend thats why I can not reveal my identity.
+    - I dont want to share my name. I am talking to you on the behalf of my friend.
+
+
+
+- synonym: harassment
+  examples: |
+    - asking for sexual favour 
+    - sexual favour
+    - writing vulger comment
+    - writing vulger comment on pics and videos.
+    - vulger comment
+    - blackmail
+    - blackmailing
+    - asking for sex
+    
+
+- synonym: stalking
+  examples: |
+    - someone is following me
+    - following
+    - follow
+    - stalking me
+    - knows everything about me
+- synonym: masquerading
+  examples: |
+    - using my identity.
+    - someone using my photos and videos
+- synonym: ex-boyfriend
+  examples: |
+    - ex- boyfrien
+- synonym: month
+  examples: |
+    - 2 months
+    - more than a month
+   
+- synonym: cybercell
+  examples: |
+    - cyber cell
+    - CYBER CELL
+    - CYBERCELL
+- synonym: cybercrime
+  examples: |
+    - National cyber crime
+    - cyber crime
+    - National Cyber crime reporting portal
+- synonym: MWCD
+  examples: |
+    - National commission for women and child development
+    - ministry
+    - Ministry of women and child developemnt
+- synonym: NCW
+  examples: |
+    - National Commission for Women
+    - nationl commission for women
+    - ncw
+- synonym: online
+  examples: |
+    - Online
+- synonym: months
+  examples: |
+    - 3 months
+- synonym: week
+  examples: |
+    - 2 weeks
+    - three week
+- synonym: day
+  examples: |
+    - 2 days
+    - 10 days
+- synonym: Patna
+  examples: |
+    - kolkata
+- synonym: UTTAR PRADESH
+  examples: |
+    - Uttar Pradesh

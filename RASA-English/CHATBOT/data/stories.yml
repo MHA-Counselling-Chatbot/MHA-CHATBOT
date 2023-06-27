@@ -1,0 +1,1911 @@
+version: "2.0"
+
+stories:
+- story: greet1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: greet2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: greet3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization
+  - intent: goodbye
+  - action: utter_goodbye  
+
+- story: greet3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  
+  - intent: organization_help
+  - action: action_organization
+  - intent: goodbye
+  - action: utter_goodbye  
+
+- story: greet4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  
+  - intent: organization_help
+  - action: action_organization  
+  - intent: help_mode
+  - action: action_help_mode
+  - intent: goodbye
+  - action: utter_goodbye  
+
+- story: greet4.1/5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization 
+  - intent: organization_help
+  - action: action_organization  
+  - intent: help_mode
+  - action: action_help_mode
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye   
+
+- story: greet4.2/6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization 
+  - intent: organization_help
+  - action: action_organization  
+  - intent: help_mode
+  - action: action_help_mode
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: contact
+  - action: action_contact
+  - intent: goodbye
+  - action: utter_goodbye    
+
+- story: greet5/7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: location
+  - action: action_location 
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+- story: greet5/8
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: location
+  - action: action_location ## cyber cell
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+
+- story: greet5/9
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization 
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: location
+  - action: action_location 
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+- story: greet5/10
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: location
+  - action: action_location 
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+- story: greet5/11
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact 
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye   
+
+
+
+- story: greet6/12
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+- story: greet6/13
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye 
+
+######Privacy_concern##########
+
+- story: greet14
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: greet15
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: greet16
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization
+  - intent: goodbye
+  - action: utter_goodbye  
+
+- story: greet17
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  
+  - intent: organization_help
+  - action: action_organization
+  - intent: goodbye
+  - action: utter_goodbye  
+
+- story: greet18
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  
+  - intent: organization_help
+  - action: action_organization  
+  - intent: help_mode
+  - action: action_help_mode
+  - intent: goodbye
+  - action: utter_goodbye  
+
+- story: greet18.1/19
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  
+  - intent: organization_help
+  - action: action_organization  
+  - intent: help_mode
+  - action: action_help_mode
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye   
+
+- story: greet18.2/20
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  
+  - intent: organization_help
+  - action: action_organization  ##in case of ncw
+  - intent: help_mode
+  - action: action_help_mode
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: contact
+  - action: action_contact
+  - intent: goodbye
+  - action: utter_goodbye    
+
+- story: greet19/21
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: location
+  - action: action_location ## cyber cell
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+- story: greet5/22
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: location
+  - action: action_location ## cyber cell
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+
+- story: greet5/23
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: location
+  - action: action_location ## cyber cell
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+- story: greet5/24
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: location
+  - action: action_location ## cyber cell
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+- story: greet5/25
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact ##cyber crime and mwcd
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye   
+
+
+
+- story: greet6/26
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+- story: greet6/27
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye 
+
+##############without follwing help_info->problem statemnt->organization info-
+- story: greet27
+  steps:
+  - intent: help_info
+  - action: utter_greet
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: greet28
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: greet29
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization
+  - intent: goodbye
+  - action: utter_goodbye  
+
+- story: greet30
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: goodbye
+  - action: utter_goodbye  
+
+- story: greet31
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization  ##in case of ncw
+  - intent: help_mode
+  - action: action_help_mode
+  - intent: goodbye
+  - action: utter_goodbye  
+
+- story: greet4.1/32
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization  ##in case of ncw
+  - intent: help_mode
+  - action: action_help_mode
+  - intent: payment_info                      ##add more general query related to organization like who will see my case?
+  - action: utter_payment
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye   
+
+- story: greet4.2/33
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization  ##in case of ncw
+  - intent: help_mode
+  - action: action_help_mode
+  - intent: payment_info                      ##add more general query related to organization like who will see my case?
+  - action: utter_payment
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: contact
+  - action: action_contact
+  - intent: goodbye
+  - action: utter_goodbye    
+
+- story: greet5/34
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: location
+  - action: action_location ## cyber cell
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+- story: greet5/35
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: location
+  - action: action_location ## cyber cell
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+
+- story: greet5/36
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: location
+  - action: action_location ## cyber cell
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+- story: greet5/37
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: location
+  - action: action_location ## cyber cell
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+- story: greet5/38
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact ##cyber crime and mwcd
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye   
+
+
+
+- story: greet6/39
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+- story: greet6/40
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye 
+
+######Privacy_concern##########
+
+- story: greet42
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: greet43
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: greet44
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization
+  - intent: goodbye
+  - action: utter_goodbye  
+
+- story: greet45
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: goodbye
+  - action: utter_goodbye  
+
+- story: greet46
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization  ##in case of ncw
+  - intent: help_mode
+  - action: action_help_mode
+  - intent: goodbye
+  - action: utter_goodbye  
+
+- story: greet18.1/47
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization  ##in case of ncw
+  - intent: help_mode
+  - action: action_help_mode
+  - intent: payment_info                      ##add more general query related to organization like who will see my case?
+  - action: utter_payment
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye   
+
+- story: greet18.2/48
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization  ##in case of ncw
+  - intent: help_mode
+  - action: action_help_mode
+  - intent: payment_info                      ##add more general query related to organization like who will see my case?
+  - action: utter_payment
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: contact
+  - action: action_contact
+  - intent: goodbye
+  - action: utter_goodbye    
+
+- story: greet19/49
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: location
+  - action: action_location ## cyber cell
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+- story: greet5/50
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: location
+  - action: action_location ## cyber cell
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+
+- story: greet5/51
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: location
+  - action: action_location ## cyber cell
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+- story: greet5/52
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: location
+  - action: action_location ## cyber cell
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+- story: greet5/53
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact ##cyber crime and mwcd
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye   
+
+
+
+- story: greet6/54
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: payment_info                      
+  - action: utter_payment
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+- story: greet6/55
+  steps:
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+  - action: action_about_organization  ##user can ask about all the 4 organizations. for this set the rule or create stories?
+  - intent: organization_help
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: goodbye
+  - action: utter_goodbye 
+
+
+
+
+
+
+#####--------------------------------direct questions    ##stalking-------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#########-----------------------------some one other than victim trying to file a complaint---------------------\
+
+
+
+
+
+
+
+
+
+
+
+
+######-------------------------------------------------#####
+
+
+- story: interactive_story_1
+  steps:
+  - intent: event_narration
+    entities:
+    - event: peecha
+  - slot_was_set:
+    - event: peecha
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - event: peecha
+  - slot_was_set:
+    - event: peecha
+  - slot_was_set:
+    - requested_slot: name
+  - slot_was_set:
+    - name: Anamika
+  - slot_was_set:
+    - name: Anamika
+  - slot_was_set:
+    - requested_slot: platform
+  - slot_was_set:
+    - platform: facebook
+  - slot_was_set:
+    - platform: facebook
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: organization_help
+    entities:
+    - org: cybercell
+  - action: action_organization
+  - intent: location
+    entities:
+    - location: ASSAM
+  - action: action_location
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: event_narration
+  - action: event_form
+  - active_loop: event_forms
+  - slot_was_set:
+    - requested_slot: event
+  - slot_was_set:
+    - event: koi mera name and pics ka use kar rha
+  - slot_was_set:
+    - event: koi mera name and pics ka use kar rha
+  - slot_was_set:
+    - requested_slot: name
+  - slot_was_set:
+    - name: Keerthi
+  - slot_was_set:
+    - name: Keerthi
+  - slot_was_set:
+    - requested_slot: platform
+  - slot_was_set:
+    - platform: instagram
+  - slot_was_set:
+    - platform: instagram
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: organization_help
+    entities:
+    - org: cyber crime
+  - action: action_organization
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+    entities:
+    - name: Armita
+  - slot_was_set:
+    - name: Armita
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - name: Armita
+  - slot_was_set:
+    - requested_slot: event
+  - slot_was_set:
+    - event: follow
+  - slot_was_set:
+    - event: follow
+  - slot_was_set:
+    - requested_slot: platform
+  - slot_was_set:
+    - platform: facebook
+  - slot_was_set:
+    - platform: facebook
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: organization_help
+    entities:
+    - org: cybercrime
+  - slot_was_set:
+    - org: cybercrime
+  - action: action_organization
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: event_narration
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - requested_slot: event
+  - slot_was_set:
+    - event: sexual favor maang
+  - slot_was_set:
+    - event: sexual favor maang
+  - slot_was_set:
+    - requested_slot: name
+  - slot_was_set:
+    - name: Sarojini
+  - slot_was_set:
+    - name: Sarojini
+  - slot_was_set:
+    - requested_slot: platform
+  - slot_was_set:
+    - platform: whatsapp
+  - slot_was_set:
+    - platform: whatsapp
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: organization_help
+    entities:
+    - org: NCW
+  - slot_was_set:
+    - org: NCW
+  - action: action_organization
+  - intent: help_mode
+    entities:
+    - mode: online
+  - slot_was_set:
+    - mode: online
+  - action: action_help_mode
+  - intent: organization_help
+    entities:
+    - org: cybercell
+  - slot_was_set:
+    - org: cybercell
+  - action: action_organization
+  - intent: location
+    entities:
+    - location: ASSAM
+  - slot_was_set:
+    - location: ASSAM
+  - action: action_location
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: privacy_concern5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: privacy_concern
+  - action: utter_privacy_concern
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: organization_help
+  - action: action_organization
+  - intent: about_organization
+  - action: action_about_organization
+  - intent: payment_info
+  - action: utter_payment
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: nameInfo6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: organization_help
+  - action: action_organization  ##timing
+  - intent: about_organization
+  - action: action_about_organization
+  - intent: payment_info
+  - action: utter_payment
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: nameInfo7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: organization_help
+  - action: action_organization  ##timing
+  - intent: about_organization
+  - action: action_about_organization
+  - intent: timing_info
+  - action: action_timing_info
+  - intent: payment_info
+  - action: utter_payment
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: interactive_story_8
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: event_narration
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - requested_slot: event
+  - slot_was_set:
+    - event: blackmail
+  - slot_was_set:
+    - event: blackmail
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: about_organization
+    entities:
+    - org: NCW
+  - slot_was_set:
+    - org: NCW
+  - action: action_about_organization
+  - intent: contact
+  - action: action_contact
+  - intent: organization_help
+  - action: action_organization
+  - intent: help_mode
+    entities:
+    - mode: online
+  - slot_was_set:
+    - mode: online
+  - action: action_help_mode
+  - intent: payment_info
+  - action: utter_payment
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_9
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: event_narration
+    entities:
+    - event: stalk
+  - slot_was_set:
+    - event: stalk
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - event: stalk
+  - slot_was_set:
+    - event: stalk
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_event_form
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: test_1
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: goodbye
+  - action: utter_goodbye
+  
+
+
+- story: interactive_story_10
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: event_narration
+    entities:
+    - accused: ex-boyfriend
+    - duration: month
+  - slot_was_set:
+    - duration: month
+  - slot_was_set:
+    - accused: ex-boyfriend
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - requested_slot: event
+  - slot_was_set:
+    - event: None
+  - slot_was_set:
+    - requested_slot: platform
+  - slot_was_set:
+    - platform: facebbok
+  - slot_was_set:
+    - platform: facebbok
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_event_form
+  - intent: event_narration
+    entities:
+    - event: blackmail
+  - slot_was_set:
+    - event: blackmail
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - event: blackmail
+  - slot_was_set:
+    - platform: facebbok
+  - slot_was_set:
+    - event: blackmail
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_event_form
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: event_narration
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - requested_slot: event
+  - slot_was_set:
+    - event: stalk
+  - slot_was_set:
+    - event: stalk
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_event_form
+  - intent: platform_info
+    entities:
+    - platform: facebook
+  - slot_was_set:
+    - platform: facebook
+  - action: utter_ask_event_form_platform
+  - intent: platformBlockInfo
+    entities:
+    - platformBlock: Yes
+  - slot_was_set:
+    - platformBlock: Yes
+  - action: action_platform_info
+  - intent: legal_advice
+  - action: utter_legal_advice
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: event_narration
+    entities:
+    - event: blackmail
+  - slot_was_set:
+    - event: blackmail
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - event: blackmail
+  - slot_was_set:
+    - event: blackmail
+  - slot_was_set:
+    - requested_slot: duration
+  - slot_was_set:
+    - duration: week
+  - slot_was_set:
+    - duration: week
+  - slot_was_set:
+    - requested_slot: platform
+  - slot_was_set:
+    - platform: whatsapp
+  - slot_was_set:
+    - platform: whatsapp
+  - slot_was_set:
+    - requested_slot: platformBlock
+  - slot_was_set:
+    - platformBlock: no
+  - slot_was_set:
+    - platformBlock: no
+  - slot_was_set:
+    - platformBlock: no
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: organization_help
+    entities:
+    - org: MWCD
+  - slot_was_set:
+    - org: MWCD
+  - action: action_organization
+  - intent: payment_info
+  - action: utter_payment
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: event_narration
+    entities:
+    - event: balckmail
+  - slot_was_set:
+    - event: balckmail
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - event: balckmail
+  - slot_was_set:
+    - event: balckmail
+  - slot_was_set:
+    - requested_slot: duration
+  - slot_was_set:
+    - duration: month
+  - slot_was_set:
+    - duration: month
+  - slot_was_set:
+    - requested_slot: platform
+  - slot_was_set:
+    - platform: whatsapp
+  - slot_was_set:
+    - platform: whatsapp
+  - slot_was_set:
+    - requested_slot: platformBlock
+  - slot_was_set:
+    - platformBlock: no
+  - slot_was_set:
+    - platformBlock: no
+  - slot_was_set:
+    - platformBlock: no
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_event_form
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: event_narration
+    entities:
+    - event: harassment
+    - platform: instagram
+  - slot_was_set:
+    - event: harassment
+  - slot_was_set:
+    - platform: instagram
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - event: harassment
+  - slot_was_set:
+    - platform: instagram
+  - slot_was_set:
+    - event: harassment
+  - slot_was_set:
+    - platform: instagram
+  - slot_was_set:
+    - requested_slot: duration
+  - slot_was_set:
+    - duration: week
+  - slot_was_set:
+    - duration: week
+  - slot_was_set:
+    - requested_slot: platformBlock
+  - slot_was_set:
+    - platformBlock: yes
+  - slot_was_set:
+    - platformBlock: yes
+  - slot_was_set:
+    - platformBlock: yes
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_event_form
+  - intent: organization_info
+  - action: utter_organization_info
+  - intent: organization_help
+    entities:
+    - org: MWCD
+  - slot_was_set:
+    - org: MWCD
+  - action: action_organization
+  - intent: contact
+  - action: action_contact
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_info
+  - action: utter_help_info
+  - intent: name_info
+    entities:
+    - name: Supriya
+  - slot_was_set:
+    - name: Supriya
+  - action: action_name_info
+  - intent: event_narration
+  - action: event_form
+  - active_loop: event_form
+  - slot_was_set:
+    - requested_slot: event
+  - slot_was_set:
+    - event: blackmail
+  - slot_was_set:
+    - event: blackmail
+  - slot_was_set:
+    - requested_slot: duration
+  - slot_was_set:
+    - duration: week
+  - slot_was_set:
+    - duration: week
+  - slot_was_set:
+    - requested_slot: platform
+  - slot_was_set:
+    - platform: whatsapp
+  - slot_was_set:
+    - platform: whatsapp
+  - slot_was_set:
+    - requested_slot: platformBlock
+  - slot_was_set:
+    - platformBlock: nhi
+  - slot_was_set:
+    - platformBlock: nhi
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_event_form
+  - intent: goodbye
+  - action: utter_goodbye
