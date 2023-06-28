@@ -69,11 +69,10 @@ The users will tell their problems and then Rakshak will reply back to the user 
 
 
 * Run the index.html file from the front-end folder  on the local host server or manually in the web browser.
-
-  5. Directory Structure
+* Directory Structure
     
-
 MHA-CHATBOT/
+
     RASA-English/
         CHATBOT/
             actions/
