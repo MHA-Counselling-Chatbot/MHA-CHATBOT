@@ -73,7 +73,7 @@ The users will tell their problems and then Rakshak will reply back to the user 
     
 MHA-CHATBOT/
 
-    RASA-English/
+    Rakshak-English/
         CHATBOT/
             actions/
             data/
@@ -86,7 +86,7 @@ MHA-CHATBOT/
             endpoints.yml
             Story_graph.dot
 
-    RASA-Hindi/
+    Rakshak-Hindi/
         CHATBOT/
             actions/
             data/
@@ -99,7 +99,7 @@ MHA-CHATBOT/
             endpoints.yml
             Story_graph.dot
 
-    RASA-Code-Mixed/
+    Rakshak-Code-Mixed/
         CHATBOT/
             actions/
             data/
