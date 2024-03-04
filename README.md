@@ -95,9 +95,5 @@
   - Ambiguous words
     - I am uncomfortable
     - “वह मेरा फ़ायदा उठ रहा है”
-Starting greeting
-नमस्ते रक्षक
-Hi, Hey,Hii
-Solution: Start conversation only with “Hello Rakshak” or “हेलो रक्षक”
 
 
