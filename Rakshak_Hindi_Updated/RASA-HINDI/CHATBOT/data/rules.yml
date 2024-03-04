@@ -1,0 +1,248 @@
+# version: "2.0"
+version: "2.0"
+
+rules:
+# - rule: universal1
+#   steps:
+#   - intent: restart
+#   - action: action_restart
+
+- rule: universal
+  steps:
+  - action: action_listen
+  - action: action_response_info
+  
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: action_response_info
+# - rule: event narration
+#   steps:
+#   - intent: event_narration
+#   - action: action_event_form 
+- rule: greet
+  steps:
+  - intent: greet
+  - action: action_response_info
+
+- rule: name_info
+  steps: 
+  - intent: name_info
+  - action: action_response_info
+
+- rule: organization
+  steps:
+  - intent: organization_help
+  - action: action_response_info
+
+- rule: helpmode
+  steps: 
+  - intent: help_mode
+  - action: action_response_info
+
+- rule: duration
+  steps:
+  - intent: duration_info
+  - action: action_response_info
+
+- rule: address
+  steps:
+  - intent: location
+  - action: action_response_info    
+
+- rule: contactInfo
+  steps:
+  - intent: contact
+  - action: action_response_info
+  
+- rule: Active From
+  steps:
+  - intent : event_narration
+  - action : action_response_info
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: action_response_info     
+  
+
+
+# - rule : Submit form
+#   condition:
+#   - active_loop : event_form
+#   steps:
+#   - action : event_form
+#   - active_loop : null
+#   - slot_was_set:
+#     - requested_slot : null
+#   - action : action_event_form
+
+- rule: platformInfo
+  steps:
+  - intent: platformBlockInfo
+  - action: action_response_info
+
+- rule: paymentInfo
+  steps:
+  - intent: payment_info
+  - action: action_response_info
+
+- rule: about
+  steps:
+  - intent: about_organization
+  - action: action_response_info
+  
+- rule: timing
+  steps:
+  - intent: timing_info
+  - action: action_response_info  
+
+# - rule: Active Form
+#   steps:
+#   - intent : event_narration
+#   - action : action_event_form
+  #- active_loop : event_form
+
+# - rule: Submit form
+#   condition:
+#   - active_loop : event_form
+#   steps:
+#   - action : event_form
+#   - active_loop : null
+#   - slot_was_set:
+#     - requested_slot : null
+#   - action : action_event_form
+    
+
+  # - rule : Submit form
+  #   condition:
+  #   - active_loop : event_form
+  #   steps:
+  #   - action : event_form
+  #   - active_loop : null
+  #   - slot_was_set:
+  #     - requested_slot : null
+  #   - action : action_symptoms_form
+  #   - action : utter_submit
+
+
+# - rule: Say 'I am a bot' anytime the user challenges
+#   steps:
+#   - intent: bot_challenge
+#   - action: utter_iamabot
+
+# rules:
+
+# - rule: Say goodbye anytime the user says goodbye
+#   steps:
+#   - intent: goodbye
+#   - action: utter_goodbye
+# # - rule: event narration
+# #   steps:
+# #   - intent: event_narration
+# #   - action: action_event_form 
+# - rule: greet
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+
+# - rule: name_info
+#   steps: 
+#   - intent: name_info
+#   - action: action_name_info
+
+# - rule: organization
+#   steps:
+#   - intent: organization_help
+#   - action: action_organization
+
+# - rule: helpmode
+#   steps: 
+#   - intent: help_mode
+#   - action: action_help_mode
+
+# - rule: duration
+#   steps:
+#   - intent: duration_info
+#   - action: action_duration_info
+
+# - rule: address
+#   steps:
+#   - intent: location
+#   - action: action_location    
+
+# - rule: contactInfo
+#   steps:
+#   - intent: contact
+#   - action: action_contact
+  
+# - rule: Active From
+#   steps:
+#   - intent : event_narration
+#   - action : event_form
+#   - active_loop : event_form
+
+
+# - rule : Submit form
+#   condition:
+#   - active_loop : event_form
+#   steps:
+#   - action : event_form
+#   - active_loop : null
+#   - slot_was_set:
+#     - requested_slot : null
+#   - action : action_event_form
+
+# - rule: platformInfo
+#   steps:
+#   - intent: platformBlockInfo
+#   - action: action_platform_info
+
+# - rule: paymentInfo
+#   steps:
+#   - intent: payment_info
+#   - action: utter_payment
+
+# - rule: about
+#   steps:
+#   - intent: about_organization
+#   - action: action_about_organization
+  
+# - rule: timing
+#   steps:
+#   - intent: timing_info
+#   - action: action_timing_info  
+
+# # - rule: Active Form
+# #   steps:
+# #   - intent : event_narration
+# #   - action : action_event_form
+#   #- active_loop : event_form
+
+# # - rule: Submit form
+# #   condition:
+# #   - active_loop : event_form
+# #   steps:
+# #   - action : event_form
+# #   - active_loop : null
+# #   - slot_was_set:
+# #     - requested_slot : null
+# #   - action : action_event_form
+    
+
+#   # - rule : Submit form
+#   #   condition:
+#   #   - active_loop : event_form
+#   #   steps:
+#   #   - action : event_form
+#   #   - active_loop : null
+#   #   - slot_was_set:
+#   #     - requested_slot : null
+#   #   - action : action_symptoms_form
+#   #   - action : utter_submit
+
+
+# # - rule: Say 'I am a bot' anytime the user challenges
+# #   steps:
+# #   - intent: bot_challenge
+# #   - action: utter_iamabot
