@@ -52,7 +52,7 @@
 * Use "python model_api.py" for running the model file
   
 # Training RASA
-* Use "Rakshak_English_updated" or "Rakshak_Hindi_Updated" or "Rakshak_codemixed_Updated" rasa model"
+* Use "Rakshak_English_Updated" or "Rakshak_Hindi_Updated" or "Rakshak_codemixed_Updated" rasa model"
 * Activate rasa environemnt
 * Use "rasa train" for training RASA model
   
